@@ -1,0 +1,162 @@
+.conditions-panel {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  height: fit-content;
+}
+
+.conditions-title {
+  font-size: 1.25rem;
+  color: var(--gray-800);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  border-bottom: 2px solid var(--gray-200);
+  padding-bottom: var(--spacing-sm);
+}
+
+.condition-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.condition-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+}
+
+.condition-select {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  color: var(--gray-700);
+  font-size: 0.9rem;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.condition-select:hover {
+  border-color: var(--gray-400);
+}
+
+.condition-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.condition-select option {
+  padding: var(--spacing-sm);
+  background: var(--white);
+  color: var(--gray-700);
+}
+
+.conditions-info {
+  background: var(--gray-50);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-color);
+  margin-top: var(--spacing-lg);
+}
+
+.conditions-info small {
+  color: var(--gray-600);
+  line-height: 1.4;
+  font-size: 0.85rem;
+  display: block;
+}
+
+/* Visual indicators for different conditions */
+.condition-group:nth-child(2) .condition-select {
+  border-left: 4px solid #ef4444; /* Temperature - Red */
+}
+
+.condition-group:nth-child(3) .condition-select {
+  border-left: 4px solid #3b82f6; /* Pressure - Blue */
+}
+
+.condition-group:nth-child(4) .condition-select {
+  border-left: 4px solid #10b981; /* Catalyst - Green */
+}
+
+/* Hover effects for condition groups */
+.condition-group {
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.condition-group:hover {
+  background: var(--gray-50);
+  transform: translateX(2px);
+}
+
+/* Custom styling for different condition types */
+.condition-select[value="high"],
+.condition-select[value="freezing"] {
+  font-weight: 600;
+}
+
+.condition-select[value="platinum"],
+.condition-select[value="enzyme"] {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+/* Animation for condition changes */
+@keyframes conditionChange {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.condition-select:focus {
+  animation: conditionChange 0.3s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .conditions-panel {
+    padding: var(--spacing-md);
+  }
+  
+  .condition-label {
+    font-size: 0.9rem;
+  }
+  
+  .condition-select {
+    font-size: 0.85rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  .conditions-panel {
+    margin-top: var(--spacing-lg);
+  }
+  
+  .conditions-title {
+    font-size: 1.125rem;
+  }
+  
+  .conditions-info {
+    margin-top: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .condition-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .conditions-info small {
+    font-size: 0.8rem;
+  }
+}

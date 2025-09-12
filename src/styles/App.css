@@ -1,0 +1,125 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Global styles for drag and drop */
+.dragging {
+  opacity: 0.7;
+  transform: rotate(5deg);
+  z-index: 1000;
+}
+
+.drag-over {
+  border: 2px dashed var(--primary-color) !important;
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Element card styles used across components */
+.element-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  cursor: grab;
+  transition: all var(--transition-normal);
+  position: relative;
+  box-shadow: var(--shadow-md);
+  user-select: none;
+}
+
+.element-card:active {
+  cursor: grabbing;
+}
+
+.element-card.element {
+  background: var(--element-bg);
+}
+
+.element-card.compound {
+  background: var(--compound-bg);
+}
+
+.element-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.element-symbol {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.element-name {
+  font-size: 0.7rem;
+  opacity: 0.9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.element-type {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 0.6rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1px 4px;
+  border-radius: var(--radius-sm);
+  opacity: 0.8;
+}
+
+/* Loading states */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--white);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .main-content {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px;
+  }
+  
+  .element-card {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .element-symbol {
+    font-size: 1rem;
+  }
+  
+  .element-name {
+    font-size: 0.65rem;
+  }
+}

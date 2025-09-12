@@ -1,0 +1,138 @@
+.learn-page {
+  padding: var(--spacing-xl) 0;
+  min-height: calc(100vh - 80px);
+}
+
+.learn-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  padding: 0 var(--spacing-md);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: var(--gray-800);
+  margin-bottom: var(--spacing-md);
+}
+
+.page-subtitle {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.learn-content {
+  display: grid;
+  grid-template-columns: 300px 1fr 280px;
+  gap: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  align-items: start;
+}
+
+.left-panel,
+.right-panel {
+  position: sticky;
+  top: calc(80px + var(--spacing-lg));
+}
+
+.center-panel {
+  min-height: 500px;
+}
+
+.learn-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-2xl);
+  padding: 0 var(--spacing-md);
+}
+
+.stat-card {
+  background: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  min-width: 120px;
+  transition: all var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .learn-content {
+    grid-template-columns: 280px 1fr 260px;
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .learn-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .left-panel,
+  .right-panel {
+    position: static;
+    order: 1;
+  }
+  
+  .center-panel {
+    order: 2;
+  }
+  
+  .right-panel {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .learn-stats {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .stat-card {
+    flex: 1;
+    min-width: 100px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .learn-content {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .learn-stats {
+    margin-top: var(--spacing-xl);
+  }
+}
