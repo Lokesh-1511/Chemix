@@ -54,6 +54,13 @@ const ResultCard = ({ reaction, onClose }) => {
               </div>
 
               {/* Placeholder for Lottie animation */}
+              {/* TODO: Replace with actual Lottie animations showing molecular bonding
+                  Suggested animations:
+                  1. Atoms approaching and bonding
+                  2. Electron sharing visualization  
+                  3. Energy release/absorption effects
+                  4. Molecular vibrations and movements
+              */}
               <div className="animation-placeholder">
                 <div className="placeholder-content">
                   <div className="molecules-animation">

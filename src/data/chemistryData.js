@@ -1,5 +1,10 @@
 // Mock data for chemistry elements and reactions
 // TODO: Replace with real chemistry database or AI-powered system
+// Future integration points:
+// 1. Connect to ChemSpider or PubChem API for real chemical data
+// 2. Implement AI-powered reaction prediction using ML models
+// 3. Add thermodynamic calculations for reaction feasibility
+// 4. Include 3D molecular structure visualization
 
 export const initialElements = [
   { id: 'H2', symbol: 'H₂', name: 'Hydrogen', type: 'element', unlocked: true },

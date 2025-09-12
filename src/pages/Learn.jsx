@@ -24,6 +24,11 @@ const Learn = ({ availableElements, unlockCompound }) => {
 
   const processReaction = (elements) => {
     // TODO: Replace with AI-powered reaction prediction system
+    // Future improvements:
+    // 1. Use machine learning models for reaction prediction
+    // 2. Connect to real chemistry databases (ChemSpider, PubChem)
+    // 3. Add thermodynamic feasibility calculations
+    // 4. Include reaction kinetics and mechanism details
     const reactantIds = elements.map(el => el.id).sort();
     
     // Find matching reaction rule
