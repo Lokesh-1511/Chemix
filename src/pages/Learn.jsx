@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ElementList from '../components/ElementList';
-import ReactionZone from '../components/ReactionZone';
-import ConditionsPanel from '../components/ConditionsPanel';
-import ResultCard from '../components/ResultCard';
+import ElementList from '../components/ElementList.jsx';
+import ReactionZone from '../components/ReactionZone.jsx';
+import ConditionsPanel from '../components/ConditionsPanel.jsx';
+import ResultCard from '../components/ResultCard.jsx';
 import { reactionRules, conditionOptions } from '../data/chemistryData';
 import '../styles/Learn.css';
 

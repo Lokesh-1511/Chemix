@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Learn from './pages/Learn';
-import About from './pages/About';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+import Learn from './pages/Learn.jsx';
+import About from './pages/About.jsx';
 import { initialElements, compounds } from './data/chemistryData';
 import './styles/App.css';
 
