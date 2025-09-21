@@ -12,7 +12,8 @@ const Learn = ({ availableElements, unlockCompound }) => {
   const [conditions, setConditions] = useState({
     temperature: 'medium',
     pressure: 'normal',
-    catalyst: 'none'
+    catalyst: 'none',
+    environment: 'air'
   });
 
   const handleConditionChange = (conditionType, value) => {

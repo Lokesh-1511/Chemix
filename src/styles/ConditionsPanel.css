@@ -4,6 +4,8 @@
   padding: var(--spacing-lg);
   box-shadow: var(--shadow-md);
   height: fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .conditions-title {
@@ -17,6 +19,14 @@
 
 .condition-group {
   margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.condition-group:hover {
+  background: var(--gray-50);
+  transform: translateX(2px);
 }
 
 .condition-label {
@@ -57,66 +67,137 @@
   color: var(--gray-700);
 }
 
-.conditions-info {
+.condition-info {
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-xs);
   background: var(--gray-50);
-  padding: var(--spacing-md);
-  border-radius: var(--radius-md);
-  border-left: 4px solid var(--primary-color);
-  margin-top: var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary-color);
 }
 
-.conditions-info small {
+.condition-info small {
   color: var(--gray-600);
-  line-height: 1.4;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  line-height: 1.3;
   display: block;
 }
 
-/* Visual indicators for different conditions */
-.condition-group:nth-child(2) .condition-select {
-  border-left: 4px solid #ef4444; /* Temperature - Red */
+/* Visual indicators for different condition types */
+.condition-select.temperature {
+  border-left: 4px solid #ef4444; /* Red for temperature */
 }
 
-.condition-group:nth-child(3) .condition-select {
-  border-left: 4px solid #3b82f6; /* Pressure - Blue */
+.condition-select.pressure {
+  border-left: 4px solid #3b82f6; /* Blue for pressure */
 }
 
-.condition-group:nth-child(4) .condition-select {
-  border-left: 4px solid #10b981; /* Catalyst - Green */
+.condition-select.catalyst {
+  border-left: 4px solid #10b981; /* Green for catalyst */
 }
 
-/* Hover effects for condition groups */
-.condition-group {
-  padding: var(--spacing-sm);
-  border-radius: var(--radius-md);
-  transition: all var(--transition-normal);
+.condition-select.environment {
+  border-left: 4px solid #8b5cf6; /* Purple for environment */
 }
 
-.condition-group:hover {
+.conditions-summary {
   background: var(--gray-50);
-  transform: translateX(2px);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--gray-200);
 }
 
-/* Custom styling for different condition types */
-.condition-select[value="high"],
-.condition-select[value="freezing"] {
-  font-weight: 600;
+.conditions-summary h4 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--gray-700);
+  font-size: 0.95rem;
 }
 
-.condition-select[value="platinum"],
-.condition-select[value="enzyme"] {
-  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+.summary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.summary-tag {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.summary-tag.temperature {
+  background: #ef4444;
+}
+
+.summary-tag.pressure {
+  background: #3b82f6;
+}
+
+.summary-tag.catalyst {
+  background: #10b981;
+}
+
+.summary-tag.environment {
+  background: #8b5cf6;
+}
+
+.conditions-help {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--primary-color);
+}
+
+.conditions-help h4 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+
+.conditions-help ul {
+  margin: 0;
+  padding-left: var(--spacing-lg);
+  color: var(--gray-600);
+}
+
+.conditions-help li {
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.4;
+  font-size: 0.85rem;
 }
 
 /* Animation for condition changes */
 @keyframes conditionChange {
   0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.02); }
   100% { transform: scale(1); }
 }
 
 .condition-select:focus {
   animation: conditionChange 0.3s ease-out;
+}
+
+/* Custom styling for different condition values */
+.condition-select[value="very_high"],
+.condition-select[value="extreme"] {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  font-weight: 600;
+}
+
+.condition-select[value="very_low"],
+.condition-select[value="freezing"] {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  font-weight: 600;
+}
+
+.condition-select[value*="platinum"],
+.condition-select[value*="palladium"],
+.condition-select[value="enzyme"] {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  font-weight: 500;
 }
 
 /* Responsive Design */
@@ -144,7 +225,11 @@
     font-size: 1.125rem;
   }
   
-  .conditions-info {
+  .summary-tags {
+    justify-content: center;
+  }
+  
+  .conditions-help {
     margin-top: var(--spacing-md);
   }
 }
@@ -156,7 +241,11 @@
     gap: var(--spacing-xs);
   }
   
-  .conditions-info small {
+  .conditions-help li {
     font-size: 0.8rem;
+  }
+  
+  .summary-tag {
+    font-size: 0.7rem;
   }
 }
