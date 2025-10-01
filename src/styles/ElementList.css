@@ -24,23 +24,7 @@
   padding: var(--spacing-sm);
 }
 
-.element-grid::-webkit-scrollbar {
-  width: 6px;
-}
-
-.element-grid::-webkit-scrollbar-track {
-  background: var(--gray-100);
-  border-radius: 3px;
-}
-
-.element-grid::-webkit-scrollbar-thumb {
-  background: var(--gray-300);
-  border-radius: 3px;
-}
-
-.element-grid::-webkit-scrollbar-thumb:hover {
-  background: var(--gray-400);
-}
+/* Scrollbar styles removed - using global hidden scrollbars */
 
 .element-list .element-card {
   transition: all var(--transition-normal);

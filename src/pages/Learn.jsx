@@ -9,6 +9,7 @@ import '../styles/Learn.css';
 const Learn = ({ availableElements, unlockCompound }) => {
   const [selectedElements, setSelectedElements] = useState([]);
   const [reactionResult, setReactionResult] = useState(null);
+  const [autoDiscovery, setAutoDiscovery] = useState(false);
   const [conditions, setConditions] = useState({
     temperature: 'medium',
     pressure: 'normal',
@@ -21,6 +22,10 @@ const Learn = ({ availableElements, unlockCompound }) => {
       ...prev,
       [conditionType]: value
     }));
+  };
+
+  const handleAutoDiscoveryToggle = (enabled) => {
+    setAutoDiscovery(enabled);
   };
 
   const processReaction = (elements) => {
@@ -39,8 +44,8 @@ const Learn = ({ availableElements, unlockCompound }) => {
     });
 
     if (matchingRule) {
-      // Check if conditions are appropriate for this reaction
-      const conditionSuccess = checkReactionConditions(matchingRule, conditions);
+      // In auto-discovery mode, skip condition checking
+      const conditionSuccess = autoDiscovery || checkReactionConditions(matchingRule, conditions);
       
       if (conditionSuccess) {
         // Find the products in our available elements
@@ -61,22 +66,27 @@ const Learn = ({ availableElements, unlockCompound }) => {
           success: true,
           equation: matchingRule.equation,
           explanation: matchingRule.explanation,
-          conditions: conditions,
+          conditions: autoDiscovery ? 'Auto-optimized conditions' : conditions,
           newCompounds: newlyUnlocked,
-          products: products
+          products: products,
+          autoDiscovery: autoDiscovery
         });
       } else {
         setReactionResult({
           success: false,
           reason: `This reaction requires ${matchingRule.conditions.temperature} temperature${matchingRule.conditions.catalyst ? ` and ${matchingRule.conditions.catalyst} catalyst` : ''}.`,
-          conditions: conditions
+          conditions: conditions,
+          autoDiscovery: autoDiscovery
         });
       }
     } else {
       setReactionResult({
         success: false,
-        reason: 'These elements do not react under current conditions. Try different combinations!',
-        conditions: conditions
+        reason: autoDiscovery 
+          ? 'These elements do not have any known reactions. Try different combinations!' 
+          : 'These elements do not react under current conditions. Try different combinations or enable auto-discovery mode!',
+        conditions: conditions,
+        autoDiscovery: autoDiscovery
       });
     }
 
@@ -139,6 +149,8 @@ const Learn = ({ availableElements, unlockCompound }) => {
             conditions={conditions}
             onConditionChange={handleConditionChange}
             conditionOptions={conditionOptions}
+            autoDiscovery={autoDiscovery}
+            onAutoDiscoveryToggle={handleAutoDiscoveryToggle}
           />
         </div>
       </div>
