@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -13,32 +14,38 @@ const Navbar = () => {
           Chemix
         </Link>
         
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <Link 
-              to="/" 
-              className={`navbar-link ${location.pathname === '/' ? 'active' : ''}`}
-            >
-              Home
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link 
-              to="/learn" 
-              className={`navbar-link ${location.pathname === '/learn' ? 'active' : ''}`}
-            >
-              Learn
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link 
-              to="/about" 
-              className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}
-            >
-              About
-            </Link>
-          </li>
-        </ul>
+        <div className="navbar-content">
+          <ul className="navbar-menu">
+            <li className="navbar-item">
+              <Link 
+                to="/" 
+                className={`navbar-link ${location.pathname === '/' ? 'active' : ''}`}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link 
+                to="/learn" 
+                className={`navbar-link ${location.pathname === '/learn' ? 'active' : ''}`}
+              >
+                Learn
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link 
+                to="/about" 
+                className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}
+              >
+                About
+              </Link>
+            </li>
+          </ul>
+          
+          <div className="navbar-actions">
+            <ThemeToggle />
+          </div>
+        </div>
       </div>
     </nav>
   );
