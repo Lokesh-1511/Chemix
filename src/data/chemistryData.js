@@ -33,7 +33,36 @@ export const initialElements = [
   { id: 'S', symbol: 'S', name: 'Sulfur', type: 'element', group: 'nonmetal', unlocked: true },
   { id: 'P', symbol: 'P', name: 'Phosphorus', type: 'element', group: 'nonmetal', unlocked: true },
   { id: 'Si', symbol: 'Si', name: 'Silicon', type: 'element', group: 'metalloid', unlocked: true },
+  // Additional common elements
+  { id: 'He', symbol: 'He', name: 'Helium', type: 'element', group: 'noble-gas', unlocked: true },
+  { id: 'Ne', symbol: 'Ne', name: 'Neon', type: 'element', group: 'noble-gas', unlocked: false },
+  { id: 'Ar', symbol: 'Ar', name: 'Argon', type: 'element', group: 'noble-gas', unlocked: false },
+  { id: 'Li', symbol: 'Li', name: 'Lithium', type: 'element', group: 'alkali-metal', unlocked: true },
+  { id: 'Be', symbol: 'Be', name: 'Beryllium', type: 'element', group: 'alkaline-earth', unlocked: false },
+  { id: 'Ti', symbol: 'Ti', name: 'Titanium', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Cr', symbol: 'Cr', name: 'Chromium', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Mn', symbol: 'Mn', name: 'Manganese', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Co', symbol: 'Co', name: 'Cobalt', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Ag', symbol: 'Ag', name: 'Silver', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Au', symbol: 'Au', name: 'Gold', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Pb', symbol: 'Pb', name: 'Lead', type: 'element', group: 'post-transition-metal', unlocked: false },
+  { id: 'Hg', symbol: 'Hg', name: 'Mercury', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Sn', symbol: 'Sn', name: 'Tin', type: 'element', group: 'post-transition-metal', unlocked: false },
+  { id: 'B', symbol: 'B', name: 'Boron', type: 'element', group: 'metalloid', unlocked: false },
+  // Additional elements for breadth
+  { id: 'Sc', symbol: 'Sc', name: 'Scandium', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'V', symbol: 'V', name: 'Vanadium', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Sr', symbol: 'Sr', name: 'Strontium', type: 'element', group: 'alkaline-earth', unlocked: false },
+  { id: 'Rb', symbol: 'Rb', name: 'Rubidium', type: 'element', group: 'alkali-metal', unlocked: false },
+  { id: 'Cs', symbol: 'Cs', name: 'Cesium', type: 'element', group: 'alkali-metal', unlocked: false },
+  { id: 'Pt', symbol: 'Pt', name: 'Platinum', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Pd', symbol: 'Pd', name: 'Palladium', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Se', symbol: 'Se', name: 'Selenium', type: 'element', group: 'nonmetal', unlocked: false },
+  { id: 'Te', symbol: 'Te', name: 'Tellurium', type: 'element', group: 'metalloid', unlocked: false },
+  { id: 'U', symbol: 'U', name: 'Uranium', type: 'element', group: 'actinide', unlocked: false },
+  { id: 'Li+', symbol: 'Li⁺', name: 'Lithium Ion', type: 'ion', group: 'ion', unlocked: false }
 ];
+
 
 export const compounds = [
   // Basic compounds
@@ -87,6 +116,59 @@ export const compounds = [
   { id: 'KOH', symbol: 'KOH', name: 'Potassium Hydroxide', type: 'compound', category: 'base', unlocked: false },
   { id: 'Ca(OH)2', symbol: 'Ca(OH)₂', name: 'Calcium Hydroxide', type: 'compound', category: 'base', unlocked: false },
   { id: 'Mg(OH)2', symbol: 'Mg(OH)₂', name: 'Magnesium Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  // Additional common compounds
+  { id: 'H2CO3', symbol: 'H₂CO₃', name: 'Carbonic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'Na2CO3', symbol: 'Na₂CO₃', name: 'Sodium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CaCO3', symbol: 'CaCO₃', name: 'Calcium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'K2SO4', symbol: 'K₂SO₄', name: 'Potassium Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Na2SO4', symbol: 'Na₂SO₄', name: 'Sodium Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'NaHCO3', symbol: 'NaHCO₃', name: 'Sodium Bicarbonate (Baking Soda)', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CaCO3', symbol: 'CaCO₃', name: 'Calcium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'C2H5OH', symbol: 'C₂H₅OH', name: 'Ethanol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CH3COOH', symbol: 'CH₃COOH', name: 'Acetic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H6', symbol: 'C₆H₆', name: 'Benzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H4', symbol: 'C₂H₄', name: 'Ethylene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H6', symbol: 'C₂H₆', name: 'Ethane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H8', symbol: 'C₃H₈', name: 'Propane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H12O6', symbol: 'C₆H₁₂O₆', name: 'Glucose', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'HNO3', symbol: 'HNO₃', name: 'Nitric Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'KOH', symbol: 'KOH', name: 'Potassium Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'NH4Cl', symbol: 'NH₄Cl', name: 'Ammonium Chloride', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'AgCl', symbol: 'AgCl', name: 'Silver Chloride', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'AgNO3', symbol: 'AgNO₃', name: 'Silver Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'PbS', symbol: 'PbS', name: 'Lead(II) Sulfide (Galena)', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'FeSO4', symbol: 'FeSO₄', name: 'Iron(II) Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Fe3O4', symbol: 'Fe₃O₄', name: 'Magnetite', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Na2O', symbol: 'Na₂O', name: 'Sodium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'K2O', symbol: 'K₂O', name: 'Potassium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'SO3', symbol: 'SO₃', name: 'Sulfur Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'NO2', symbol: 'NO₂', name: 'Nitrogen Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'N2O', symbol: 'N₂O', name: 'Nitrous Oxide (Laughing Gas)', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'H2S', symbol: 'H₂S', name: 'Hydrogen Sulfide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'NaOH', symbol: 'NaOH', name: 'Sodium Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  // More compounds
+  { id: 'CH3COONa', symbol: 'CH₃COONa', name: 'Sodium Acetate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CH3COOC2H5', symbol: 'CH₃COOC₂H₅', name: 'Ethyl Acetate', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'NaNO3', symbol: 'NaNO₃', name: 'Sodium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'NH4NO3', symbol: 'NH₄NO₃', name: 'Ammonium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'O3', symbol: 'O₃', name: 'Ozone', type: 'compound', category: 'molecular', unlocked: false },
+  { id: 'C6H5OH', symbol: 'C₆H₅OH', name: 'Phenol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CH3COCH3', symbol: 'CH₃COCH₃', name: 'Acetone', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CH3CHO', symbol: 'CH₃CHO', name: 'Acetaldehyde', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H6', symbol: 'C₃H₆', name: 'Propene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H10', symbol: 'C₄H₁₀', name: 'Butane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5NO2', symbol: 'C₆H₅NO₂', name: 'Nitrobenzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'Na2S', symbol: 'Na₂S', name: 'Sodium Sulfide', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'H2SO3', symbol: 'H₂SO₃', name: 'Sulfurous Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'ClO2', symbol: 'ClO₂', name: 'Chlorine Dioxide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'HClO4', symbol: 'HClO₄', name: 'Perchloric Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'K2CO3', symbol: 'K₂CO₃', name: 'Potassium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Li2CO3', symbol: 'Li₂CO₃', name: 'Lithium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'PbO', symbol: 'PbO', name: 'Lead(II) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'CuSO4', symbol: 'CuSO₄', name: 'Copper(II) Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'H2CO', symbol: 'H₂CO', name: 'Formaldehyde', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H2', symbol: 'C₂H₂', name: 'Acetylene', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'H2S2O8', symbol: 'H₂S₂O₈', name: 'Peroxydisulfate', type: 'compound', category: 'oxidizer', unlocked: false },
 ];
 
 // Hardcoded reaction rules - TODO: Replace with AI or comprehensive database
@@ -402,6 +484,162 @@ export const reactionRules = [
       pressure: 'normal',
       catalyst: null
     }
+  }
+  ,
+  // Additional reaction rules
+  {
+    id: 'combustion_ethanol',
+    reactants: ['C2H5OH', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O',
+    explanation: 'Ethanol combusts in oxygen to produce carbon dioxide and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'sodium_bicarbonate_decomposition',
+    reactants: ['NaHCO3'],
+    products: ['Na2CO3', 'CO2', 'H2O'],
+    equation: '2NaHCO₃ → Na₂CO₃ + CO₂ + H₂O',
+    explanation: 'Heating sodium bicarbonate decomposes it into sodium carbonate, carbon dioxide and water.',
+    type: 'decomposition',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'acid_base_neutralization',
+    reactants: ['HCl', 'NaOH'],
+    products: ['NaCl', 'H2O'],
+    equation: 'HCl + NaOH → NaCl + H₂O',
+    explanation: 'Strong acid reacts with strong base to form a salt and water.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'saponification',
+    reactants: ['CH3COOH', 'NaOH'],
+    products: ['CH3COONa', 'H2O'],
+    equation: 'CH₃COOH + NaOH → CH₃COONa + H₂O',
+    explanation: 'Acetic acid neutralized by sodium hydroxide to form sodium acetate and water (simple model for saponification).',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'rusting_simple',
+    reactants: ['Fe', 'O2', 'H2O'],
+    products: ['Fe2O3', 'H2'],
+    equation: '4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O',
+    explanation: 'Simplified representation of iron oxidation (rust formation) in presence of water.',
+    type: 'oxidation',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'water' }
+  },
+  {
+    id: 'photosynthesis_simple',
+    reactants: ['CO2', 'H2O', 'light'],
+    products: ['C6H12O6', 'O2'],
+    equation: '6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂',
+    explanation: 'Simplified photosynthesis equation (light-driven conversion of carbon dioxide and water into glucose and oxygen).',
+    type: 'biochemical',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'light' }
+  },
+  {
+    id: 'esterification_ethanol_acetic',
+    reactants: ['C2H5OH', 'CH3COOH'],
+    products: ['CH3COOC2H5', 'H2O'],
+    equation: 'CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O',
+    explanation: 'Acetic acid reacts with ethanol to form ethyl acetate (an ester) and water; reversible reaction, acid-catalyzed.',
+    type: 'synthesis',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'acid' }
+  },
+  {
+    id: 'silver_chloride_precipitation',
+    reactants: ['AgNO3', 'NaCl'],
+    products: ['AgCl', 'NaNO3'],
+    equation: 'AgNO₃ + NaCl → AgCl(s) + NaNO₃',
+    explanation: 'Mixing solutions containing Ag+ and Cl- produces insoluble silver chloride precipitate.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'hydrogenation_ethene',
+    reactants: ['C2H4', 'H2'],
+    products: ['C2H6'],
+    equation: 'C₂H₄ + H₂ → C₂H₆',
+    explanation: 'Hydrogenation of ethene to ethane; typically requires a metal catalyst like Pd or Ni.',
+    type: 'addition',
+    conditions: { temperature: 'medium', pressure: 'elevated', catalyst: 'palladium' }
+  },
+  {
+    id: 'dehydration_ethanol_to_ethylene',
+    reactants: ['C2H5OH'],
+    products: ['C2H4', 'H2O'],
+    equation: 'C₂H₅OH → C₂H₄ + H₂O',
+    explanation: 'Dehydration of ethanol to produce ethylene using an acid catalyst (e.g., H₂SO₄).',
+    type: 'elimination',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'acid' }
+  }
+  ,
+  {
+    id: 'propane_combustion',
+    reactants: ['C3H8', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₃H₈ + 5O₂ → 3CO₂ + 4H₂O',
+    explanation: 'Propane combusts in oxygen producing carbon dioxide and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'ammonium_nitrate_formation',
+    reactants: ['NH3', 'HNO3'],
+    products: ['NH4NO3'],
+    equation: 'NH₃ + HNO₃ → NH₄NO₃',
+    explanation: 'Neutralization of ammonia with nitric acid forms ammonium nitrate, a common fertilizer.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'sodium_acetate_formation',
+    reactants: ['CH3COOH', 'NaOH'],
+    products: ['CH3COONa', 'H2O'],
+    equation: 'CH₃COOH + NaOH → CH₃COONa + H₂O',
+    explanation: 'Formation of sodium acetate from acetic acid and sodium hydroxide.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'ozone_formation_photochemical',
+    reactants: ['O2', 'UV_light'],
+    products: ['O3'],
+    equation: '3O₂ + UV → 2O₃',
+    explanation: 'Photochemical formation of ozone from oxygen under ultraviolet irradiation.',
+    type: 'photochemical',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'UV_light' }
+  },
+  {
+    id: 'benzene_nitration',
+    reactants: ['C6H6', 'HNO3', 'H2SO4'],
+    products: ['C6H5NO2', 'H2O'],
+    equation: 'C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O',
+    explanation: 'Electrophilic aromatic substitution: nitration of benzene to nitrobenzene using nitric and sulfuric acids.',
+    type: 'substitution',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'H2SO4' }
+  },
+  {
+    id: 'acetylene_hydrogenation_to_ethene',
+    reactants: ['C2H2', 'H2'],
+    products: ['C2H4'],
+    equation: 'C₂H₂ + H₂ → C₂H₄',
+    explanation: 'Hydrogenation of acetylene to ethene, typically metal-catalyzed.',
+    type: 'addition',
+    conditions: { temperature: 'medium', pressure: 'elevated', catalyst: 'nickel' }
+  },
+  {
+    id: 'acetone_oxidation_simple',
+    reactants: ['CH3COCH3', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'CH₃COCH₃ + 4O₂ → 3CO₂ + 3H₂O',
+    explanation: 'Simplified combustion/oxidation of acetone to carbon dioxide and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
   }
 ];
 
