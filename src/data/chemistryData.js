@@ -51,6 +51,7 @@ export const initialElements = [
   { id: 'B', symbol: 'B', name: 'Boron', type: 'element', group: 'metalloid', unlocked: false },
   // Additional elements for breadth
   { id: 'Sc', symbol: 'Sc', name: 'Scandium', type: 'element', group: 'transition-metal', unlocked: false },
+    { id: 'HClO', symbol: 'HClO', name: 'Hypochlorous Acid', type: 'compound', category: 'acid', unlocked: false },
   { id: 'V', symbol: 'V', name: 'Vanadium', type: 'element', group: 'transition-metal', unlocked: false },
   { id: 'Sr', symbol: 'Sr', name: 'Strontium', type: 'element', group: 'alkaline-earth', unlocked: false },
   { id: 'Rb', symbol: 'Rb', name: 'Rubidium', type: 'element', group: 'alkali-metal', unlocked: false },
@@ -190,6 +191,7 @@ export const compounds = [
   { id: 'NaClO4', symbol: 'NaClO₄', name: 'Sodium Perchlorate', type: 'compound', category: 'oxidizer', unlocked: false },
   { id: 'KNO3', symbol: 'KNO₃', name: 'Potassium Nitrate (Saltpeter)', type: 'compound', category: 'salt', unlocked: false },
   { id: 'Al2(SO4)3', symbol: 'Al₂(SO₄)₃', name: 'Aluminium Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CaSO4', symbol: 'CaSO₄', name: 'Calcium Sulfate (Anhydrite/Plaster of Paris)', type: 'compound', category: 'salt', unlocked: false },
   { id: 'CaSO4_2H2O', symbol: 'CaSO₄·2H₂O', name: 'Gypsum (Calcium Sulfate Dihydrate)', type: 'compound', category: 'mineral', unlocked: false },
   { id: 'LiCoO2', symbol: 'LiCoO₂', name: 'Lithium Cobalt Oxide', type: 'compound', category: 'battery', unlocked: false },
   { id: 'LiFePO4', symbol: 'LiFePO₄', name: 'Lithium Iron Phosphate', type: 'compound', category: 'battery', unlocked: false },
@@ -671,6 +673,63 @@ export const reactionRules = [
     conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
   }
   ,
+  // Product + single element reactions
+  {
+    id: 'sodium_water_reaction',
+    reactants: ['H2O', 'Na'],
+    products: ['NaOH', 'H2'],
+    equation: '2Na + 2H₂O → 2NaOH + H₂↑',
+    explanation: 'Sodium metal reacts vigorously with water to form sodium hydroxide and hydrogen gas.',
+    type: 'single_displacement',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'carbon_dioxide_reduction_carbon',
+    reactants: ['CO2', 'C'],
+    products: ['CO'],
+    equation: 'CO₂ + C → 2CO',
+    explanation: 'At high temperatures, carbon reduces carbon dioxide to carbon monoxide (Boudouard reaction direction).',
+    type: 'redox',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'hydrochloric_acid_with_sodium',
+    reactants: ['HCl', 'Na'],
+    products: ['NaCl', 'H2'],
+    equation: '2Na + 2HCl → 2NaCl + H₂',
+    explanation: 'Active metal sodium displaces hydrogen from hydrochloric acid.',
+    type: 'single_displacement',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'sulfuric_acid_copper_reaction',
+    reactants: ['H2SO4', 'Cu'],
+    products: ['CuSO4', 'H2'],
+    equation: 'Cu + H₂SO₄ → CuSO₄ + H₂',
+    explanation: 'Simplified representation: copper reacts with acid to form copper(II) sulfate and hydrogen (note: needs hot conc. acid for typical lab; model simplified).',
+    type: 'single_displacement',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'hematite_reduction_hydrogen',
+    reactants: ['Fe2O3', 'H2'],
+    products: ['Fe', 'H2O'],
+    equation: 'Fe₂O₃ + 3H₂ → 2Fe + 3H₂O',
+    explanation: 'Hydrogen reduces iron(III) oxide to iron with formation of water vapor.',
+    type: 'redox',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'glucose_combustion',
+    reactants: ['C6H12O6', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O',
+    explanation: 'Combustion of glucose with oxygen to carbon dioxide and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  }
+,
+
   {
     id: 'chloralkali_electrolysis',
     reactants: ['NaCl', 'H2O', 'electricity'],
