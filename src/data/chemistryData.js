@@ -61,6 +61,21 @@ export const initialElements = [
   { id: 'Te', symbol: 'Te', name: 'Tellurium', type: 'element', group: 'metalloid', unlocked: false },
   { id: 'U', symbol: 'U', name: 'Uranium', type: 'element', group: 'actinide', unlocked: false },
   { id: 'Li+', symbol: 'Li⁺', name: 'Lithium Ion', type: 'ion', group: 'ion', unlocked: false }
+  // Additional transition/lanthanide elements and nickel
+  ,{ id: 'Ni', symbol: 'Ni', name: 'Nickel', type: 'element', group: 'transition-metal', unlocked: false }
+  ,{ id: 'La', symbol: 'La', name: 'Lanthanum', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Ce', symbol: 'Ce', name: 'Cerium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Nd', symbol: 'Nd', name: 'Neodymium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Sm', symbol: 'Sm', name: 'Samarium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Eu', symbol: 'Eu', name: 'Europium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Gd', symbol: 'Gd', name: 'Gadolinium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Tb', symbol: 'Tb', name: 'Terbium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Dy', symbol: 'Dy', name: 'Dysprosium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Ho', symbol: 'Ho', name: 'Holmium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Er', symbol: 'Er', name: 'Erbium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Tm', symbol: 'Tm', name: 'Thulium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Yb', symbol: 'Yb', name: 'Ytterbium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Lu', symbol: 'Lu', name: 'Lutetium', type: 'element', group: 'lanthanide', unlocked: false }
 ];
 
 
@@ -169,7 +184,21 @@ export const compounds = [
   { id: 'H2CO', symbol: 'H₂CO', name: 'Formaldehyde', type: 'compound', category: 'organic', unlocked: false },
   { id: 'C2H2', symbol: 'C₂H₂', name: 'Acetylene', type: 'compound', category: 'gas', unlocked: false },
   { id: 'H2S2O8', symbol: 'H₂S₂O₈', name: 'Peroxydisulfate', type: 'compound', category: 'oxidizer', unlocked: false },
+  // Industrial salts, oxidizers, minerals, and battery materials
+  { id: 'NaClO', symbol: 'NaClO', name: 'Sodium Hypochlorite', type: 'compound', category: 'oxidizer', unlocked: false },
+  { id: 'NaClO3', symbol: 'NaClO₃', name: 'Sodium Chlorate', type: 'compound', category: 'oxidizer', unlocked: false },
+  { id: 'NaClO4', symbol: 'NaClO₄', name: 'Sodium Perchlorate', type: 'compound', category: 'oxidizer', unlocked: false },
+  { id: 'KNO3', symbol: 'KNO₃', name: 'Potassium Nitrate (Saltpeter)', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Al2(SO4)3', symbol: 'Al₂(SO₄)₃', name: 'Aluminium Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CaSO4_2H2O', symbol: 'CaSO₄·2H₂O', name: 'Gypsum (Calcium Sulfate Dihydrate)', type: 'compound', category: 'mineral', unlocked: false },
+  { id: 'LiCoO2', symbol: 'LiCoO₂', name: 'Lithium Cobalt Oxide', type: 'compound', category: 'battery', unlocked: false },
+  { id: 'LiFePO4', symbol: 'LiFePO₄', name: 'Lithium Iron Phosphate', type: 'compound', category: 'battery', unlocked: false },
+  { id: 'C_graphite', symbol: 'C', name: 'Graphite (Carbon)', type: 'compound', category: 'material', unlocked: false },
+  { id: 'LiPF6', symbol: 'LiPF₆', name: 'Lithium Hexafluorophosphate (electrolyte salt)', type: 'compound', category: 'electrolyte', unlocked: false },
+  { id: 'Na2CO3_2H2O', symbol: 'Na₂CO₃·2H₂O', name: 'Sodium Carbonate Decahydrate (trona-like)', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'K2SO4_2H2O', symbol: 'K₂SO₄·2H₂O', name: 'Potassium Sulfate Hydrate', type: 'compound', category: 'salt', unlocked: false },
 ];
+
 
 // Hardcoded reaction rules - TODO: Replace with AI or comprehensive database
 export const reactionRules = [
@@ -640,6 +669,52 @@ export const reactionRules = [
     explanation: 'Simplified combustion/oxidation of acetone to carbon dioxide and water.',
     type: 'combustion',
     conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  }
+  ,
+  {
+    id: 'chloralkali_electrolysis',
+    reactants: ['NaCl', 'H2O', 'electricity'],
+    products: ['NaOH', 'Cl2', 'H2'],
+    equation: '2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂ (electrolysis)',
+    explanation: 'Electrolysis of brine produces sodium hydroxide, chlorine gas, and hydrogen gas.',
+    type: 'electrolysis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'electricity' }
+  },
+  {
+    id: 'hypochlorite_formation',
+    reactants: ['Cl2', 'NaOH'],
+    products: ['NaCl', 'NaClO', 'H2O'],
+    equation: 'Cl₂ + 2NaOH → NaCl + NaClO + H₂O',
+    explanation: 'Chlorine reacts with cold dilute sodium hydroxide to produce sodium hypochlorite (bleach).',
+    type: 'synthesis',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'potassium_nitrate_formation',
+    reactants: ['NaNO3', 'KCl'],
+    products: ['KNO3', 'NaCl'],
+    equation: 'NaNO₃ + KCl → KNO₃ + NaCl (metathesis)',
+    explanation: 'Metathesis / salt-exchange reaction producing potassium nitrate and sodium chloride.',
+    type: 'metathesis',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'gypsum_hydration',
+    reactants: ['CaSO4', 'H2O'],
+    products: ['CaSO4_2H2O'],
+    equation: 'CaSO₄ + 2H₂O → CaSO₄·2H₂O',
+    explanation: 'Hydration of calcium sulfate forms gypsum (dihydrate).',
+    type: 'hydration',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'water' }
+  },
+  {
+    id: 'co2_capture_by_naoh',
+    reactants: ['CO2', 'NaOH'],
+    products: ['Na2CO3', 'H2O'],
+    equation: '2NaOH + CO₂ → Na₂CO₃ + H₂O',
+    explanation: 'Sodium hydroxide captures carbon dioxide forming sodium carbonate; used in CO₂ scrubbing.',
+    type: 'capture',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
   }
 ];
 
