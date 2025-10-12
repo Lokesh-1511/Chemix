@@ -40,6 +40,14 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            <li className="navbar-item">
+              <Link 
+                to="/periodic" 
+                className={`navbar-link ${location.pathname === '/periodic' ? 'active' : ''}`}
+              >
+                Periodic Table
+              </Link>
+            </li>
           </ul>
           
           <div className="navbar-actions">

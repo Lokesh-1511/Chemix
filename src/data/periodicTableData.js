@@ -1,0 +1,148 @@
+// Periodic Table data: positions (period=row 1-7, group=column 1-18)
+// Minimal, readable dataset with common uses; extend as needed.
+
+export const periodicElements = [
+  // Period 1
+  { atomicNumber: 1,  symbol: 'H',  name: 'Hydrogen',      period: 1, group: 1,  category: 'nonmetal',                uses: 'Fuel, acids, ammonia' },
+  { atomicNumber: 2,  symbol: 'He', name: 'Helium',        period: 1, group: 18, category: 'noble gas',                uses: 'Cryogenics, balloons' },
+
+  // Period 2
+  { atomicNumber: 3,  symbol: 'Li', name: 'Lithium',       period: 2, group: 1,  category: 'alkali metal',            uses: 'Batteries, ceramics' },
+  { atomicNumber: 4,  symbol: 'Be', name: 'Beryllium',     period: 2, group: 2,  category: 'alkaline earth metal',    uses: 'Alloys, X-ray windows' },
+  { atomicNumber: 5,  symbol: 'B',  name: 'Boron',         period: 2, group: 13, category: 'metalloid',               uses: 'Borosilicate glass' },
+  { atomicNumber: 6,  symbol: 'C',  name: 'Carbon',        period: 2, group: 14, category: 'nonmetal',                uses: 'Life, fuels, materials' },
+  { atomicNumber: 7,  symbol: 'N',  name: 'Nitrogen',      period: 2, group: 15, category: 'nonmetal',                uses: 'Fertilizers, cryogenics' },
+  { atomicNumber: 8,  symbol: 'O',  name: 'Oxygen',        period: 2, group: 16, category: 'nonmetal',                uses: 'Medical, steelmaking' },
+  { atomicNumber: 9,  symbol: 'F',  name: 'Fluorine',      period: 2, group: 17, category: 'halogen',                 uses: 'Fluoropolymers' },
+  { atomicNumber: 10, symbol: 'Ne', name: 'Neon',          period: 2, group: 18, category: 'noble gas',                uses: 'Neon lighting' },
+
+  // Period 3
+  { atomicNumber: 11, symbol: 'Na', name: 'Sodium',        period: 3, group: 1,  category: 'alkali metal',            uses: 'Salts, glass' },
+  { atomicNumber: 12, symbol: 'Mg', name: 'Magnesium',     period: 3, group: 2,  category: 'alkaline earth metal',    uses: 'Light alloys' },
+  { atomicNumber: 13, symbol: 'Al', name: 'Aluminum',      period: 3, group: 13, category: 'post-transition metal',   uses: 'Structures, cans' },
+  { atomicNumber: 14, symbol: 'Si', name: 'Silicon',       period: 3, group: 14, category: 'metalloid',               uses: 'Chips, glass' },
+  { atomicNumber: 15, symbol: 'P',  name: 'Phosphorus',    period: 3, group: 15, category: 'nonmetal',                uses: 'Fertilizers, matches' },
+  { atomicNumber: 16, symbol: 'S',  name: 'Sulfur',        period: 3, group: 16, category: 'nonmetal',                uses: 'Sulfuric acid' },
+  { atomicNumber: 17, symbol: 'Cl', name: 'Chlorine',      period: 3, group: 17, category: 'halogen',                 uses: 'Water treatment' },
+  { atomicNumber: 18, symbol: 'Ar', name: 'Argon',         period: 3, group: 18, category: 'noble gas',                uses: 'Shielding gas' },
+
+  // Period 4
+  { atomicNumber: 19, symbol: 'K',  name: 'Potassium',     period: 4, group: 1,  category: 'alkali metal',            uses: 'Fertilizers' },
+  { atomicNumber: 20, symbol: 'Ca', name: 'Calcium',       period: 4, group: 2,  category: 'alkaline earth metal',    uses: 'Cement, bones' },
+  { atomicNumber: 21, symbol: 'Sc', name: 'Scandium',      period: 4, group: 3,  category: 'transition metal',        uses: 'Aerospace alloys' },
+  { atomicNumber: 22, symbol: 'Ti', name: 'Titanium',      period: 4, group: 4,  category: 'transition metal',        uses: 'Aerospace, implants' },
+  { atomicNumber: 23, symbol: 'V',  name: 'Vanadium',      period: 4, group: 5,  category: 'transition metal',        uses: 'Steel alloys' },
+  { atomicNumber: 24, symbol: 'Cr', name: 'Chromium',      period: 4, group: 6,  category: 'transition metal',        uses: 'Stainless steel' },
+  { atomicNumber: 25, symbol: 'Mn', name: 'Manganese',     period: 4, group: 7,  category: 'transition metal',        uses: 'Steelmaking' },
+  { atomicNumber: 26, symbol: 'Fe', name: 'Iron',          period: 4, group: 8,  category: 'transition metal',        uses: 'Steel, magnets' },
+  { atomicNumber: 27, symbol: 'Co', name: 'Cobalt',        period: 4, group: 9,  category: 'transition metal',        uses: 'Batteries' },
+  { atomicNumber: 28, symbol: 'Ni', name: 'Nickel',        period: 4, group: 10, category: 'transition metal',        uses: 'Alloys, catalysts' },
+  { atomicNumber: 29, symbol: 'Cu', name: 'Copper',        period: 4, group: 11, category: 'transition metal',        uses: 'Electrical wiring' },
+  { atomicNumber: 30, symbol: 'Zn', name: 'Zinc',          period: 4, group: 12, category: 'transition metal',        uses: 'Galvanization' },
+  { atomicNumber: 31, symbol: 'Ga', name: 'Gallium',       period: 4, group: 13, category: 'post-transition metal',   uses: 'Semiconductors' },
+  { atomicNumber: 32, symbol: 'Ge', name: 'Germanium',     period: 4, group: 14, category: 'metalloid',               uses: 'Electronics, optics' },
+  { atomicNumber: 33, symbol: 'As', name: 'Arsenic',       period: 4, group: 15, category: 'metalloid',               uses: 'Alloys, semiconductors' },
+  { atomicNumber: 34, symbol: 'Se', name: 'Selenium',      period: 4, group: 16, category: 'nonmetal',                uses: 'Glass, electronics' },
+  { atomicNumber: 35, symbol: 'Br', name: 'Bromine',       period: 4, group: 17, category: 'halogen',                 uses: 'Flame retardants' },
+  { atomicNumber: 36, symbol: 'Kr', name: 'Krypton',       period: 4, group: 18, category: 'noble gas',                uses: 'Lighting' },
+
+  // Period 5
+  { atomicNumber: 37, symbol: 'Rb', name: 'Rubidium',      period: 5, group: 1,  category: 'alkali metal',            uses: 'Research, clocks' },
+  { atomicNumber: 38, symbol: 'Sr', name: 'Strontium',     period: 5, group: 2,  category: 'alkaline earth metal',    uses: 'Fireworks (red)' },
+  { atomicNumber: 39, symbol: 'Y',  name: 'Yttrium',       period: 5, group: 3,  category: 'transition metal',        uses: 'LEDs, superconductors' },
+  { atomicNumber: 40, symbol: 'Zr', name: 'Zirconium',     period: 5, group: 4,  category: 'transition metal',        uses: 'Nuclear cladding' },
+  { atomicNumber: 41, symbol: 'Nb', name: 'Niobium',       period: 5, group: 5,  category: 'transition metal',        uses: 'Superalloys' },
+  { atomicNumber: 42, symbol: 'Mo', name: 'Molybdenum',    period: 5, group: 6,  category: 'transition metal',        uses: 'Alloys, catalysts' },
+  { atomicNumber: 43, symbol: 'Tc', name: 'Technetium',    period: 5, group: 7,  category: 'transition metal',        uses: 'Medical tracers' },
+  { atomicNumber: 44, symbol: 'Ru', name: 'Ruthenium',     period: 5, group: 8,  category: 'transition metal',        uses: 'Electronics, catalysts' },
+  { atomicNumber: 45, symbol: 'Rh', name: 'Rhodium',       period: 5, group: 9,  category: 'transition metal',        uses: 'Catalytic converters' },
+  { atomicNumber: 46, symbol: 'Pd', name: 'Palladium',     period: 5, group: 10, category: 'transition metal',        uses: 'Catalysts, electronics' },
+  { atomicNumber: 47, symbol: 'Ag', name: 'Silver',        period: 5, group: 11, category: 'transition metal',        uses: 'Electronics, jewelry' },
+  { atomicNumber: 48, symbol: 'Cd', name: 'Cadmium',       period: 5, group: 12, category: 'transition metal',        uses: 'Batteries, pigments' },
+  { atomicNumber: 49, symbol: 'In', name: 'Indium',        period: 5, group: 13, category: 'post-transition metal',   uses: 'ITO coatings' },
+  { atomicNumber: 50, symbol: 'Sn', name: 'Tin',           period: 5, group: 14, category: 'post-transition metal',   uses: 'Solder, plating' },
+  { atomicNumber: 51, symbol: 'Sb', name: 'Antimony',      period: 5, group: 15, category: 'metalloid',               uses: 'Flame retardants' },
+  { atomicNumber: 52, symbol: 'Te', name: 'Tellurium',     period: 5, group: 16, category: 'metalloid',               uses: 'Alloys, solar cells' },
+  { atomicNumber: 53, symbol: 'I',  name: 'Iodine',        period: 5, group: 17, category: 'halogen',                 uses: 'Antiseptics, nutrition' },
+  { atomicNumber: 54, symbol: 'Xe', name: 'Xenon',         period: 5, group: 18, category: 'noble gas',                uses: 'Lamps, anesthesia' },
+
+  // Period 6 (d-block)
+  { atomicNumber: 55, symbol: 'Cs', name: 'Cesium',        period: 6, group: 1,  category: 'alkali metal',            uses: 'Atomic clocks' },
+  { atomicNumber: 56, symbol: 'Ba', name: 'Barium',        period: 6, group: 2,  category: 'alkaline earth metal',    uses: 'X-ray contrast' },
+  // f-block (lanthanides) — rendered separately
+  { atomicNumber: 57, symbol: 'La', name: 'Lanthanum',     period: 6, group: 3,  category: 'lanthanide',              uses: 'Optics, batteries' },
+  { atomicNumber: 58, symbol: 'Ce', name: 'Cerium',        period: 6, group: 3,  category: 'lanthanide',              uses: 'Polishing, catalysts' },
+  { atomicNumber: 59, symbol: 'Pr', name: 'Praseodymium',  period: 6, group: 3,  category: 'lanthanide',              uses: 'Magnets, alloys' },
+  { atomicNumber: 60, symbol: 'Nd', name: 'Neodymium',     period: 6, group: 3,  category: 'lanthanide',              uses: 'Strong magnets' },
+  { atomicNumber: 61, symbol: 'Pm', name: 'Promethium',    period: 6, group: 3,  category: 'lanthanide',              uses: 'Research' },
+  { atomicNumber: 62, symbol: 'Sm', name: 'Samarium',      period: 6, group: 3,  category: 'lanthanide',              uses: 'Magnets' },
+  { atomicNumber: 63, symbol: 'Eu', name: 'Europium',      period: 6, group: 3,  category: 'lanthanide',              uses: 'Phosphors' },
+  { atomicNumber: 64, symbol: 'Gd', name: 'Gadolinium',    period: 6, group: 3,  category: 'lanthanide',              uses: 'MRI contrast' },
+  { atomicNumber: 65, symbol: 'Tb', name: 'Terbium',       period: 6, group: 3,  category: 'lanthanide',              uses: 'Green phosphors' },
+  { atomicNumber: 66, symbol: 'Dy', name: 'Dysprosium',    period: 6, group: 3,  category: 'lanthanide',              uses: 'Magnets, lasers' },
+  { atomicNumber: 67, symbol: 'Ho', name: 'Holmium',       period: 6, group: 3,  category: 'lanthanide',              uses: 'Magnets, lasers' },
+  { atomicNumber: 68, symbol: 'Er', name: 'Erbium',        period: 6, group: 3,  category: 'lanthanide',              uses: 'Optical fibers' },
+  { atomicNumber: 69, symbol: 'Tm', name: 'Thulium',       period: 6, group: 3,  category: 'lanthanide',              uses: 'Lasers' },
+  { atomicNumber: 70, symbol: 'Yb', name: 'Ytterbium',     period: 6, group: 3,  category: 'lanthanide',              uses: 'Lasers, alloys' },
+  { atomicNumber: 71, symbol: 'Lu', name: 'Lutetium',      period: 6, group: 3,  category: 'lanthanide',              uses: 'PET detectors' },
+  // Back to d-block
+  { atomicNumber: 72, symbol: 'Hf', name: 'Hafnium',       period: 6, group: 4,  category: 'transition metal',        uses: 'Nuclear control rods' },
+  { atomicNumber: 73, symbol: 'Ta', name: 'Tantalum',      period: 6, group: 5,  category: 'transition metal',        uses: 'Electronics, implants' },
+  { atomicNumber: 74, symbol: 'W',  name: 'Tungsten',      period: 6, group: 6,  category: 'transition metal',        uses: 'Hard alloys, filaments' },
+  { atomicNumber: 75, symbol: 'Re', name: 'Rhenium',       period: 6, group: 7,  category: 'transition metal',        uses: 'Superalloys' },
+  { atomicNumber: 76, symbol: 'Os', name: 'Osmium',        period: 6, group: 8,  category: 'transition metal',        uses: 'Alloys, catalysts' },
+  { atomicNumber: 77, symbol: 'Ir', name: 'Iridium',       period: 6, group: 9,  category: 'transition metal',        uses: 'Electrodes, catalysts' },
+  { atomicNumber: 78, symbol: 'Pt', name: 'Platinum',      period: 6, group: 10, category: 'transition metal',        uses: 'Catalysts, jewelry' },
+  { atomicNumber: 79, symbol: 'Au', name: 'Gold',          period: 6, group: 11, category: 'transition metal',        uses: 'Electronics, finance' },
+  { atomicNumber: 80, symbol: 'Hg', name: 'Mercury',       period: 6, group: 12, category: 'transition metal',        uses: 'Lamps, devices' },
+  { atomicNumber: 81, symbol: 'Tl', name: 'Thallium',      period: 6, group: 13, category: 'post-transition metal',   uses: 'Electronics (limited)' },
+  { atomicNumber: 82, symbol: 'Pb', name: 'Lead',          period: 6, group: 14, category: 'post-transition metal',   uses: 'Batteries, shielding' },
+  { atomicNumber: 83, symbol: 'Bi', name: 'Bismuth',       period: 6, group: 15, category: 'post-transition metal',   uses: 'Alloys, medicine' },
+  { atomicNumber: 84, symbol: 'Po', name: 'Polonium',      period: 6, group: 16, category: 'metalloid',               uses: 'Research' },
+  { atomicNumber: 85, symbol: 'At', name: 'Astatine',      period: 6, group: 17, category: 'halogen',                 uses: 'Research' },
+  { atomicNumber: 86, symbol: 'Rn', name: 'Radon',         period: 6, group: 18, category: 'noble gas',                uses: 'Research' },
+
+  // Period 7 (d-block)
+  { atomicNumber: 87, symbol: 'Fr', name: 'Francium',      period: 7, group: 1,  category: 'alkali metal',            uses: 'Research' },
+  { atomicNumber: 88, symbol: 'Ra', name: 'Radium',        period: 7, group: 2,  category: 'alkaline earth metal',    uses: 'Research' },
+  // f-block (actinides) — rendered separately
+  { atomicNumber: 89, symbol: 'Ac', name: 'Actinium',      period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 90, symbol: 'Th', name: 'Thorium',       period: 7, group: 3,  category: 'actinide',                uses: 'Nuclear fuel research' },
+  { atomicNumber: 91, symbol: 'Pa', name: 'Protactinium',  period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 92, symbol: 'U',  name: 'Uranium',       period: 7, group: 3,  category: 'actinide',                uses: 'Nuclear fuel' },
+  { atomicNumber: 93, symbol: 'Np', name: 'Neptunium',     period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 94, symbol: 'Pu', name: 'Plutonium',     period: 7, group: 3,  category: 'actinide',                uses: 'Nuclear energy' },
+  { atomicNumber: 95, symbol: 'Am', name: 'Americium',     period: 7, group: 3,  category: 'actinide',                uses: 'Smoke detectors' },
+  { atomicNumber: 96, symbol: 'Cm', name: 'Curium',        period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 97, symbol: 'Bk', name: 'Berkelium',     period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 98, symbol: 'Cf', name: 'Californium',   period: 7, group: 3,  category: 'actinide',                uses: 'Neutron source' },
+  { atomicNumber: 99, symbol: 'Es', name: 'Einsteinium',   period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 100,symbol: 'Fm', name: 'Fermium',       period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 101,symbol: 'Md', name: 'Mendelevium',   period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 102,symbol: 'No', name: 'Nobelium',      period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  { atomicNumber: 103,symbol: 'Lr', name: 'Lawrencium',    period: 7, group: 3,  category: 'actinide',                uses: 'Research' },
+  // Back to d/p-block superheavies
+  { atomicNumber: 104,symbol: 'Rf', name: 'Rutherfordium', period: 7, group: 4,  category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 105,symbol: 'Db', name: 'Dubnium',       period: 7, group: 5,  category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 106,symbol: 'Sg', name: 'Seaborgium',    period: 7, group: 6,  category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 107,symbol: 'Bh', name: 'Bohrium',       period: 7, group: 7,  category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 108,symbol: 'Hs', name: 'Hassium',       period: 7, group: 8,  category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 109,symbol: 'Mt', name: 'Meitnerium',    period: 7, group: 9,  category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 110,symbol: 'Ds', name: 'Darmstadtium',  period: 7, group: 10, category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 111,symbol: 'Rg', name: 'Roentgenium',   period: 7, group: 11, category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 112,symbol: 'Cn', name: 'Copernicium',   period: 7, group: 12, category: 'transition metal',        uses: 'Research' },
+  { atomicNumber: 113,symbol: 'Nh', name: 'Nihonium',      period: 7, group: 13, category: 'post-transition metal',   uses: 'Research' },
+  { atomicNumber: 114,symbol: 'Fl', name: 'Flerovium',     period: 7, group: 14, category: 'post-transition metal',   uses: 'Research' },
+  { atomicNumber: 115,symbol: 'Mc', name: 'Moscovium',     period: 7, group: 15, category: 'post-transition metal',   uses: 'Research' },
+  { atomicNumber: 116,symbol: 'Lv', name: 'Livermorium',   period: 7, group: 16, category: 'post-transition metal',   uses: 'Research' },
+  { atomicNumber: 117,symbol: 'Ts', name: 'Tennessine',    period: 7, group: 17, category: 'halogen',                 uses: 'Research' },
+  { atomicNumber: 118,symbol: 'Og', name: 'Oganesson',     period: 7, group: 18, category: 'noble gas',                uses: 'Research' },
+];
+
+// Optional: positions for lanthanides (57-71) and actinides (89-103) can be displayed
+// in separate rows below main table; here we only seed a subset to render the layout nicely.
+
+export const tableConfig = {
+  groups: 18,
+  periods: 7,
+};
