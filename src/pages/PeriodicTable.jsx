@@ -1,9 +1,11 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { periodicElements, tableConfig } from '../data/periodicTableData';
 import '../styles/PeriodicTable.css';
 
 const PeriodicTable = () => {
   const [selected, setSelected] = useState(null);
+  const lnRef = useRef(null);
+  const anRef = useRef(null);
 
   // Build a 2D map: period x group -> element
   const gridMap = useMemo(() => {
@@ -53,6 +55,26 @@ const PeriodicTable = () => {
                       <span className="pt-symbol">{el.symbol}</span>
                     </button>
                   )}
+                  {!show && period === 6 && group === 3 && (
+                    <button
+                      className="pt-tile pt-placeholder"
+                      title="Lanthanides (57–71)"
+                      onClick={() => lnRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                    >
+                      <span className="pt-atomic">57–71</span>
+                      <span className="pt-symbol">Ln</span>
+                    </button>
+                  )}
+                  {!show && period === 7 && group === 3 && (
+                    <button
+                      className="pt-tile pt-placeholder"
+                      title="Actinides (89–103)"
+                      onClick={() => anRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                    >
+                      <span className="pt-atomic">89–103</span>
+                      <span className="pt-symbol">An</span>
+                    </button>
+                  )}
                 </div>
               );
             })
@@ -74,7 +96,7 @@ const PeriodicTable = () => {
       </div>
 
       <section className="pt-fblock">
-        <h3>Lanthanides</h3>
+        <h3 ref={lnRef}>Lanthanides</h3>
         <div className="pt-row">
           {lanthanides.map(el => (
             <button key={el.atomicNumber} className={`pt-tile cat-${(el.category || '').replace(/\s+/g, '-')}`} onClick={() => openInfo(el)}>
@@ -83,7 +105,7 @@ const PeriodicTable = () => {
             </button>
           ))}
         </div>
-        <h3>Actinides</h3>
+        <h3 ref={anRef}>Actinides</h3>
         <div className="pt-row">
           {actinides.map(el => (
             <button key={el.atomicNumber} className={`pt-tile cat-${(el.category || '').replace(/\s+/g, '-')}`} onClick={() => openInfo(el)}>
