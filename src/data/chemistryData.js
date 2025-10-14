@@ -199,6 +199,40 @@ export const compounds = [
   { id: 'LiPF6', symbol: 'LiPF₆', name: 'Lithium Hexafluorophosphate (electrolyte salt)', type: 'compound', category: 'electrolyte', unlocked: false },
   { id: 'Na2CO3_2H2O', symbol: 'Na₂CO₃·2H₂O', name: 'Sodium Carbonate Decahydrate (trona-like)', type: 'compound', category: 'salt', unlocked: false },
   { id: 'K2SO4_2H2O', symbol: 'K₂SO₄·2H₂O', name: 'Potassium Sulfate Hydrate', type: 'compound', category: 'salt', unlocked: false },
+  // --- Extended set (advanced, industrial, environmental, energy, coordination, organics) ---
+  { id: 'HNO2', symbol: 'HNO₂', name: 'Nitrous Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'NO', symbol: 'NO', name: 'Nitric Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'FeCl2', symbol: 'FeCl₂', name: 'Iron(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'Cu2O', symbol: 'Cu₂O', name: 'Copper(I) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'KMnO4', symbol: 'KMnO₄', name: 'Potassium Permanganate', type: 'compound', category: 'oxidizer', unlocked: false },
+  { id: 'K2Cr2O7', symbol: 'K₂Cr₂O₇', name: 'Potassium Dichromate', type: 'compound', category: 'oxidizer', unlocked: false },
+  { id: 'CuSO4_5H2O', symbol: 'CuSO₄·5H₂O', name: 'Copper(II) Sulfate Pentahydrate', type: 'compound', category: 'hydrate', unlocked: false },
+  { id: 'Na2S2O3', symbol: 'Na₂S₂O₃', name: 'Sodium Thiosulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'NaHSO4', symbol: 'NaHSO₄', name: 'Sodium Bisulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'NaNO2', symbol: 'NaNO₂', name: 'Sodium Nitrite', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'HClO3', symbol: 'HClO₃', name: 'Chloric Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'HClO2', symbol: 'HClO₂', name: 'Chlorous Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'H2C2O4', symbol: 'H₂C₂O₄', name: 'Oxalic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'SF6', symbol: 'SF₆', name: 'Sulfur Hexafluoride', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'CF4', symbol: 'CF₄', name: 'Carbon Tetrafluoride', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'C2H2F4', symbol: 'C₂H₂F₄', name: '1,1,1,2-Tetrafluoroethane (HFC-134a)', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'Li2O', symbol: 'Li₂O', name: 'Lithium Oxide', type: 'compound', category: 'battery', unlocked: false },
+  { id: 'Li2S', symbol: 'Li₂S', name: 'Lithium Sulfide', type: 'compound', category: 'battery', unlocked: false },
+  { id: 'LiMn2O4', symbol: 'LiMn₂O₄', name: 'Lithium Manganese Oxide (Spinel)', type: 'compound', category: 'battery', unlocked: false },
+  { id: 'LiNiO2', symbol: 'LiNiO₂', name: 'Lithium Nickel Oxide', type: 'compound', category: 'battery', unlocked: false },
+  { id: 'LiNiMnCoO2', symbol: 'LiNiMnCoO₂', name: 'Lithium Nickel Manganese Cobalt Oxide (NMC)', type: 'compound', category: 'battery', unlocked: false },
+  { id: '(NH4)2SO4', symbol: '(NH₄)₂SO₄', name: 'Ammonium Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'K3PO4', symbol: 'K₃PO₄', name: 'Potassium Phosphate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'C7H8', symbol: 'C₇H₈', name: 'Toluene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H5OC2H5', symbol: 'C₂H₅OC₂H₅', name: 'Diethyl Ether', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'SiH4', symbol: 'SiH₄', name: 'Silane', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'NH2CONH2', symbol: 'NH₂CONH₂', name: 'Urea', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'OH_radical', symbol: '•OH', name: 'Hydroxyl Radical', type: 'compound', category: 'radical', unlocked: false },
+  { id: 'NO3_radical', symbol: 'NO₃•', name: 'Nitrate Radical', type: 'compound', category: 'radical', unlocked: false },
+  { id: 'H2Se', symbol: 'H₂Se', name: 'Hydrogen Selenide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'Li2CO3', symbol: 'Li₂CO₃', name: 'Lithium Carbonate', type: 'compound', category: 'salt', unlocked: false }, // duplicate safe guard override if existed
+  { id: 'PE', symbol: '(C₂H₄)ₙ', name: 'Polyethylene (repeat unit)', type: 'compound', category: 'polymer', unlocked: false },
+  { id: 'PP', symbol: '(C₃H₆)ₙ', name: 'Polypropylene (repeat unit)', type: 'compound', category: 'polymer', unlocked: false },
 ];
 
 
@@ -774,6 +808,115 @@ export const reactionRules = [
     explanation: 'Sodium hydroxide captures carbon dioxide forming sodium carbonate; used in CO₂ scrubbing.',
     type: 'capture',
     conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  // --- New reaction rules for extended compounds ---
+  {
+    id: 'nitric_oxide_formation',
+    reactants: ['N2', 'O2'],
+    products: ['NO'],
+    equation: 'N₂ + O₂ → 2NO',
+    explanation: 'High-temperature formation of nitric oxide in combustion environments.',
+    type: 'synthesis',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'nitric_oxide_oxidation',
+    reactants: ['NO', 'O2'],
+    products: ['NO2'],
+    equation: '2NO + O₂ → 2NO₂',
+    explanation: 'Oxidation of nitric oxide to nitrogen dioxide in air.',
+    type: 'oxidation',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'nitrous_acid_formation',
+    reactants: ['NO2', 'H2O'],
+    products: ['HNO2', 'HNO3'],
+    equation: '2NO₂ + H₂O → HNO₂ + HNO₃',
+    explanation: 'Disproportionation of nitrogen dioxide in water producing nitrous and nitric acids.',
+    type: 'disproportionation',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'fecl2_chlorination',
+    reactants: ['FeCl2', 'Cl2'],
+    products: ['FeCl3'],
+    equation: '2FeCl₂ + Cl₂ → 2FeCl₃',
+    explanation: 'Oxidation of iron(II) chloride to iron(III) chloride by chlorine.',
+    type: 'redox',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'lithium_oxide_formation',
+    reactants: ['Li', 'O2'],
+    products: ['Li2O'],
+    equation: '4Li + O₂ → 2Li₂O',
+    explanation: 'Lithium metal reacts with oxygen forming lithium oxide (battery context).',
+    type: 'synthesis',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'lithium_carbonate_from_oxide',
+    reactants: ['Li2O', 'CO2'],
+    products: ['Li2CO3'],
+    equation: 'Li₂O + CO₂ → Li₂CO₃',
+    explanation: 'Carbonation of lithium oxide forming lithium carbonate.',
+    type: 'synthesis',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'copper_sulfate_pentahydrate_formation',
+    reactants: ['CuSO4', 'H2O'],
+    products: ['CuSO4_5H2O'],
+    equation: 'CuSO₄ + 5H₂O → CuSO₄·5H₂O',
+    explanation: 'Hydration of anhydrous copper(II) sulfate produces the blue pentahydrate crystals.',
+    type: 'hydration',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'water' }
+  },
+  {
+    id: 'kmno4_decomposition',
+    reactants: ['KMnO4'],
+    products: ['K2MnO4', 'MnO2', 'O2'],
+    equation: '2KMnO₄ → K₂MnO₄ + MnO₂ + O₂',
+    explanation: 'Thermal decomposition of potassium permanganate releasing oxygen (simplified).',
+    type: 'decomposition',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'nitrous_acid_neutralization',
+    reactants: ['HNO2', 'NaOH'],
+    products: ['NaNO2', 'H2O'],
+    equation: 'HNO₂ + NaOH → NaNO₂ + H₂O',
+    explanation: 'Neutralization of nitrous acid by sodium hydroxide giving sodium nitrite.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'calcium_hydroxide_co2_capture',
+    reactants: ['Ca(OH)2', 'CO2'],
+    products: ['CaCO3', 'H2O'],
+    equation: 'Ca(OH)₂ + CO₂ → CaCO₃ + H₂O',
+    explanation: 'Carbon dioxide reacts with calcium hydroxide forming insoluble calcium carbonate (limewater test).',
+    type: 'capture',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'silane_combustion',
+    reactants: ['SiH4', 'O2'],
+    products: ['SiO2', 'H2O'],
+    equation: 'SiH₄ + 2O₂ → SiO₂ + 2H₂O',
+    explanation: 'Pyrophoric silane combusts spontaneously in air forming silica and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'toluene_combustion',
+    reactants: ['C7H8', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₇H₈ + 9O₂ → 7CO₂ + 4H₂O',
+    explanation: 'Complete combustion of toluene produces carbon dioxide and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
   }
 ];
 
