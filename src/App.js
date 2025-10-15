@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home.jsx';
 import Learn from './pages/Learn.jsx';
 import About from './pages/About.jsx';
-import PeriodicTable from './pages/PeriodicTable.jsx';
+import PeriodicTablePage from './pages/PeriodicTablePage.jsx';
 import { initialElements, compounds } from './data/chemistryData';
 import './styles/App.css';
 
@@ -43,7 +43,7 @@ function App() {
               } 
             />
             <Route path="/about" element={<About />} />
-            <Route path="/periodic" element={<PeriodicTable />} />
+            <Route path="/periodic" element={<PeriodicTablePage />} />
           </Routes>
         </main>
       </Router>
