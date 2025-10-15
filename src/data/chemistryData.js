@@ -233,6 +233,116 @@ export const compounds = [
   { id: 'Li2CO3', symbol: 'Li₂CO₃', name: 'Lithium Carbonate', type: 'compound', category: 'salt', unlocked: false }, // duplicate safe guard override if existed
   { id: 'PE', symbol: '(C₂H₄)ₙ', name: 'Polyethylene (repeat unit)', type: 'compound', category: 'polymer', unlocked: false },
   { id: 'PP', symbol: '(C₃H₆)ₙ', name: 'Polypropylene (repeat unit)', type: 'compound', category: 'polymer', unlocked: false },
+  
+  // Additional Inorganic Compounds
+  { id: 'BaCl2', symbol: 'BaCl₂', name: 'Barium Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'BaSO4', symbol: 'BaSO₄', name: 'Barium Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'MgSO4', symbol: 'MgSO₄', name: 'Magnesium Sulfate (Epsom Salt)', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'ZnSO4', symbol: 'ZnSO₄', name: 'Zinc Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'NiSO4', symbol: 'NiSO₄', name: 'Nickel(II) Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CoSO4', symbol: 'CoSO₄', name: 'Cobalt(II) Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'MnSO4', symbol: 'MnSO₄', name: 'Manganese(II) Sulfate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CrCl3', symbol: 'CrCl₃', name: 'Chromium(III) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'TiO2', symbol: 'TiO₂', name: 'Titanium Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'MnO2', symbol: 'MnO₂', name: 'Manganese Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'V2O5', symbol: 'V₂O₅', name: 'Vanadium(V) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Cr2O3', symbol: 'Cr₂O₃', name: 'Chromium(III) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'NiO', symbol: 'NiO', name: 'Nickel(II) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'CoO', symbol: 'CoO', name: 'Cobalt(II) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'SnO2', symbol: 'SnO₂', name: 'Tin(IV) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'PbO2', symbol: 'PbO₂', name: 'Lead(IV) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'HgO', symbol: 'HgO', name: 'Mercury(II) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Ag2O', symbol: 'Ag₂O', name: 'Silver Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  
+  // More Halides
+  { id: 'AgBr', symbol: 'AgBr', name: 'Silver Bromide', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'AgI', symbol: 'AgI', name: 'Silver Iodide', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'PbCl2', symbol: 'PbCl₂', name: 'Lead(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'PbBr2', symbol: 'PbBr₂', name: 'Lead(II) Bromide', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'PbI2', symbol: 'PbI₂', name: 'Lead(II) Iodide', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'CuBr2', symbol: 'CuBr₂', name: 'Copper(II) Bromide', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'CuI', symbol: 'CuI', name: 'Copper(I) Iodide', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'HgCl2', symbol: 'HgCl₂', name: 'Mercury(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'Hg2Cl2', symbol: 'Hg₂Cl₂', name: 'Mercury(I) Chloride (Calomel)', type: 'compound', category: 'ionic', unlocked: false },
+  
+  // Phosphates and Nitrates
+  { id: 'Ca3(PO4)2', symbol: 'Ca₃(PO₄)₂', name: 'Calcium Phosphate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Mg3(PO4)2', symbol: 'Mg₃(PO₄)₂', name: 'Magnesium Phosphate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'AlPO4', symbol: 'AlPO₄', name: 'Aluminum Phosphate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Na3PO4', symbol: 'Na₃PO₄', name: 'Sodium Phosphate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Ca(NO3)2', symbol: 'Ca(NO₃)₂', name: 'Calcium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Mg(NO3)2', symbol: 'Mg(NO₃)₂', name: 'Magnesium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Al(NO3)3', symbol: 'Al(NO₃)₃', name: 'Aluminum Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Fe(NO3)3', symbol: 'Fe(NO₃)₃', name: 'Iron(III) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Cu(NO3)2', symbol: 'Cu(NO₃)₂', name: 'Copper(II) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Pb(NO3)2', symbol: 'Pb(NO₃)₂', name: 'Lead(II) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  
+  // Sulfides
+  { id: 'FeS', symbol: 'FeS', name: 'Iron(II) Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'FeS2', symbol: 'FeS₂', name: 'Iron Disulfide (Pyrite)', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'ZnS', symbol: 'ZnS', name: 'Zinc Sulfide (Sphalerite)', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'CuS', symbol: 'CuS', name: 'Copper(II) Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'Cu2S', symbol: 'Cu₂S', name: 'Copper(I) Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'Ag2S', symbol: 'Ag₂S', name: 'Silver Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'HgS', symbol: 'HgS', name: 'Mercury(II) Sulfide (Cinnabar)', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'CdS', symbol: 'CdS', name: 'Cadmium Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'NiS', symbol: 'NiS', name: 'Nickel(II) Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'CoS', symbol: 'CoS', name: 'Cobalt(II) Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  { id: 'MnS', symbol: 'MnS', name: 'Manganese(II) Sulfide', type: 'compound', category: 'sulfide', unlocked: false },
+  
+  // Carbonates
+  { id: 'MgCO3', symbol: 'MgCO₃', name: 'Magnesium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'BaCO3', symbol: 'BaCO₃', name: 'Barium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'SrCO3', symbol: 'SrCO₃', name: 'Strontium Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'FeCO3', symbol: 'FeCO₃', name: 'Iron(II) Carbonate (Siderite)', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'ZnCO3', symbol: 'ZnCO₃', name: 'Zinc Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'PbCO3', symbol: 'PbCO₃', name: 'Lead(II) Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'CuCO3', symbol: 'CuCO₃', name: 'Copper(II) Carbonate', type: 'compound', category: 'salt', unlocked: false },
+  
+  // Organic Compounds - Expanded
+  { id: 'CH3OH', symbol: 'CH₃OH', name: 'Methanol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H7OH', symbol: 'C₃H₇OH', name: 'Propanol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H9OH', symbol: 'C₄H₉OH', name: 'Butanol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'HCOOH', symbol: 'HCOOH', name: 'Formic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H6O', symbol: 'C₃H₆O', name: 'Propylene Oxide', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H4O', symbol: 'C₂H₄O', name: 'Ethylene Oxide', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5CH3', symbol: 'C₆H₅CH₃', name: 'Methylbenzene (Toluene)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5Cl', symbol: 'C₆H₅Cl', name: 'Chlorobenzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5Br', symbol: 'C₆H₅Br', name: 'Bromobenzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5I', symbol: 'C₆H₅I', name: 'Iodobenzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5NH2', symbol: 'C₆H₅NH₂', name: 'Aniline', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C10H8', symbol: 'C₁₀H₈', name: 'Naphthalene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C12H22O11', symbol: 'C₁₂H₂₂O₁₁', name: 'Sucrose (Table Sugar)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H8O7', symbol: 'C₆H₈O₇', name: 'Citric Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H6O3', symbol: 'C₃H₆O₃', name: 'Lactic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H4O4', symbol: 'C₄H₄O₄', name: 'Maleic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H6O4', symbol: 'C₄H₆O₄', name: 'Succinic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CH2Cl2', symbol: 'CH₂Cl₂', name: 'Dichloromethane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CHCl3', symbol: 'CHCl₃', name: 'Chloroform', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CCl4', symbol: 'CCl₄', name: 'Carbon Tetrachloride', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H5Cl', symbol: 'C₂H₅Cl', name: 'Ethyl Chloride', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H5Br', symbol: 'C₂H₅Br', name: 'Ethyl Bromide', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H5I', symbol: 'C₂H₅I', name: 'Ethyl Iodide', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H12', symbol: 'C₅H₁₂', name: 'Pentane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H14', symbol: 'C₆H₁₄', name: 'Hexane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C7H16', symbol: 'C₇H₁₆', name: 'Heptane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C8H18', symbol: 'C₈H₁₈', name: 'Octane', type: 'compound', category: 'organic', unlocked: false },
+  
+  // Complex Coordination Compounds
+  { id: '[Fe(CN)6]4-', symbol: '[Fe(CN)₆]⁴⁻', name: 'Ferrocyanide Ion', type: 'compound', category: 'coordination', unlocked: false },
+  { id: '[Fe(CN)6]3-', symbol: '[Fe(CN)₆]³⁻', name: 'Ferricyanide Ion', type: 'compound', category: 'coordination', unlocked: false },
+  { id: '[Cu(NH3)4]2+', symbol: '[Cu(NH₃)₄]²⁺', name: 'Tetraamminecopper(II) Ion', type: 'compound', category: 'coordination', unlocked: false },
+  { id: '[Ag(NH3)2]+', symbol: '[Ag(NH₃)₂]⁺', name: 'Diamminesilver(I) Ion', type: 'compound', category: 'coordination', unlocked: false },
+  
+  // Industrial Gases
+  { id: 'CO', symbol: 'CO', name: 'Carbon Monoxide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'N2O4', symbol: 'N₂O₄', name: 'Dinitrogen Tetroxide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'N2O5', symbol: 'N₂O₅', name: 'Dinitrogen Pentoxide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'SO', symbol: 'SO', name: 'Sulfur Monoxide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'CS2', symbol: 'CS₂', name: 'Carbon Disulfide', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'PH3', symbol: 'PH₃', name: 'Phosphine', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'AsH3', symbol: 'AsH₃', name: 'Arsine', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'B2H6', symbol: 'B₂H₆', name: 'Diborane', type: 'compound', category: 'gas', unlocked: false },
 ];
 
 
@@ -917,6 +1027,328 @@ export const reactionRules = [
     explanation: 'Complete combustion of toluene produces carbon dioxide and water.',
     type: 'combustion',
     conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  
+  // Additional Metal Oxide Formations
+  {
+    id: 'magnesium_oxide_formation',
+    reactants: ['Mg', 'O2'],
+    products: ['MgO'],
+    equation: '2Mg + O₂ → 2MgO',
+    explanation: 'Magnesium burns brilliantly in air to form magnesium oxide.',
+    type: 'synthesis',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'zinc_oxide_formation',
+    reactants: ['Zn', 'O2'],
+    products: ['ZnO'],
+    equation: '2Zn + O₂ → 2ZnO',
+    explanation: 'Zinc metal oxidizes in air forming white zinc oxide.',
+    type: 'synthesis',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'copper_oxide_formation',
+    reactants: ['Cu', 'O2'],
+    products: ['CuO'],
+    equation: '2Cu + O₂ → 2CuO',
+    explanation: 'Copper forms black copper(II) oxide when heated in air.',
+    type: 'synthesis',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'titanium_oxide_formation',
+    reactants: ['Ti', 'O2'],
+    products: ['TiO2'],
+    equation: 'Ti + O₂ → TiO₂',
+    explanation: 'Titanium metal reacts with oxygen forming titanium dioxide (white pigment).',
+    type: 'synthesis',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: null }
+  },
+  
+  // Acid-Base Reactions
+  {
+    id: 'hcl_naoh_neutralization',
+    reactants: ['HCl', 'NaOH'],
+    products: ['NaCl', 'H2O'],
+    equation: 'HCl + NaOH → NaCl + H₂O',
+    explanation: 'Strong acid-base neutralization producing salt and water.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'h2so4_naoh_neutralization',
+    reactants: ['H2SO4', 'NaOH'],
+    products: ['Na2SO4', 'H2O'],
+    equation: 'H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O',
+    explanation: 'Sulfuric acid reacts with sodium hydroxide forming sodium sulfate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'hno3_koh_neutralization',
+    reactants: ['HNO3', 'KOH'],
+    products: ['KNO3', 'H2O'],
+    equation: 'HNO₃ + KOH → KNO₃ + H₂O',
+    explanation: 'Nitric acid neutralized by potassium hydroxide produces potassium nitrate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'h3po4_naoh_neutralization',
+    reactants: ['H3PO4', 'NaOH'],
+    products: ['Na3PO4', 'H2O'],
+    equation: 'H₃PO₄ + 3NaOH → Na₃PO₄ + 3H₂O',
+    explanation: 'Phosphoric acid (triprotic) neutralized by sodium hydroxide.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'acetic_acid_naoh',
+    reactants: ['CH3COOH', 'NaOH'],
+    products: ['CH3COONa', 'H2O'],
+    equation: 'CH₃COOH + NaOH → CH₃COONa + H₂O',
+    explanation: 'Acetic acid (weak) neutralized by strong base forming sodium acetate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Precipitation Reactions
+  {
+    id: 'silver_chloride_precipitation',
+    reactants: ['AgNO3', 'NaCl'],
+    products: ['AgCl', 'NaNO3'],
+    equation: 'AgNO₃ + NaCl → AgCl↓ + NaNO₃',
+    explanation: 'Silver nitrate reacts with sodium chloride forming white precipitate of silver chloride.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'barium_sulfate_precipitation',
+    reactants: ['BaCl2', 'Na2SO4'],
+    products: ['BaSO4', 'NaCl'],
+    equation: 'BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl',
+    explanation: 'Barium chloride and sodium sulfate form insoluble barium sulfate (used in medical imaging).',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'lead_iodide_precipitation',
+    reactants: ['Pb(NO3)2', 'KI'],
+    products: ['PbI2', 'KNO3'],
+    equation: 'Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃',
+    explanation: 'Lead(II) nitrate and potassium iodide produce beautiful yellow precipitate of lead(II) iodide.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'calcium_carbonate_precipitation',
+    reactants: ['CaCl2', 'Na2CO3'],
+    products: ['CaCO3', 'NaCl'],
+    equation: 'CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2NaCl',
+    explanation: 'Calcium chloride and sodium carbonate produce calcium carbonate precipitate.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Organic Combustion Reactions
+  {
+    id: 'ethanol_combustion',
+    reactants: ['C2H5OH', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O',
+    explanation: 'Ethanol burns in oxygen producing carbon dioxide and water (biofuel).',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'propane_combustion',
+    reactants: ['C3H8', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₃H₈ + 5O₂ → 3CO₂ + 4H₂O',
+    explanation: 'Propane (LPG) combusts completely in oxygen.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'butane_combustion',
+    reactants: ['C4H10', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: '2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O',
+    explanation: 'Butane combusts producing carbon dioxide and water vapor.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'benzene_combustion',
+    reactants: ['C6H6', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: '2C₆H₆ + 15O₂ → 12CO₂ + 6H₂O',
+    explanation: 'Benzene burns with a sooty flame due to high carbon content.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'acetylene_combustion',
+    reactants: ['C2H2', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: '2C₂H₂ + 5O₂ → 4CO₂ + 2H₂O',
+    explanation: 'Acetylene combustion produces very high temperatures (oxy-acetylene torch).',
+    type: 'combustion',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: null }
+  },
+  
+  // Decomposition Reactions
+  {
+    id: 'hydrogen_peroxide_decomposition',
+    reactants: ['H2O2'],
+    products: ['H2O', 'O2'],
+    equation: '2H₂O₂ → 2H₂O + O₂',
+    explanation: 'Hydrogen peroxide decomposes into water and oxygen gas (catalyzed by MnO₂).',
+    type: 'decomposition',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'MnO2' }
+  },
+  {
+    id: 'calcium_carbonate_decomposition',
+    reactants: ['CaCO3'],
+    products: ['CaO', 'CO2'],
+    equation: 'CaCO₃ → CaO + CO₂',
+    explanation: 'Thermal decomposition of limestone produces quicklime and carbon dioxide.',
+    type: 'decomposition',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'sodium_bicarbonate_decomposition',
+    reactants: ['NaHCO3'],
+    products: ['Na2CO3', 'H2O', 'CO2'],
+    equation: '2NaHCO₃ → Na₂CO₃ + H₂O + CO₂',
+    explanation: 'Baking soda decomposes when heated releasing carbon dioxide (leavening agent).',
+    type: 'decomposition',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'mercury_oxide_decomposition',
+    reactants: ['HgO'],
+    products: ['Hg', 'O2'],
+    equation: '2HgO → 2Hg + O₂',
+    explanation: 'Mercury(II) oxide decomposes to mercury and oxygen (historic oxygen discovery).',
+    type: 'decomposition',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: null }
+  },
+  
+  // Redox Reactions
+  {
+    id: 'zinc_copper_sulfate',
+    reactants: ['Zn', 'CuSO4'],
+    products: ['ZnSO4', 'Cu'],
+    equation: 'Zn + CuSO₄ → ZnSO₄ + Cu',
+    explanation: 'Zinc displaces copper from copper sulfate solution (single displacement).',
+    type: 'redox',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'iron_copper_sulfate',
+    reactants: ['Fe', 'CuSO4'],
+    products: ['FeSO4', 'Cu'],
+    equation: 'Fe + CuSO₄ → FeSO₄ + Cu',
+    explanation: 'Iron metal reduces copper ions, depositing copper metal.',
+    type: 'redox',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'magnesium_hydrochloric_acid',
+    reactants: ['Mg', 'HCl'],
+    products: ['MgCl2', 'H2'],
+    equation: 'Mg + 2HCl → MgCl₂ + H₂',
+    explanation: 'Magnesium reacts vigorously with hydrochloric acid producing hydrogen gas.',
+    type: 'redox',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'zinc_hydrochloric_acid',
+    reactants: ['Zn', 'HCl'],
+    products: ['ZnCl2', 'H2'],
+    equation: 'Zn + 2HCl → ZnCl₂ + H₂',
+    explanation: 'Zinc dissolves in hydrochloric acid releasing hydrogen gas.',
+    type: 'redox',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'aluminum_hydrochloric_acid',
+    reactants: ['Al', 'HCl'],
+    products: ['AlCl3', 'H2'],
+    equation: '2Al + 6HCl → 2AlCl₃ + 3H₂',
+    explanation: 'Aluminum reacts with hydrochloric acid producing hydrogen.',
+    type: 'redox',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Industrial Processes
+  {
+    id: 'sulfur_trioxide_formation',
+    reactants: ['SO2', 'O2'],
+    products: ['SO3'],
+    equation: '2SO₂ + O₂ ⇌ 2SO₃',
+    explanation: 'Key step in sulfuric acid production (Contact Process) with V₂O₅ catalyst.',
+    type: 'synthesis',
+    conditions: { temperature: 'high', pressure: 'elevated', catalyst: 'V2O5' }
+  },
+  {
+    id: 'sulfuric_acid_formation',
+    reactants: ['SO3', 'H2O'],
+    products: ['H2SO4'],
+    equation: 'SO₃ + H₂O → H₂SO₄',
+    explanation: 'Sulfur trioxide reacts with water forming concentrated sulfuric acid.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'nitric_acid_production',
+    reactants: ['NO2', 'H2O', 'O2'],
+    products: ['HNO3'],
+    equation: '4NO₂ + 2H₂O + O₂ → 4HNO₃',
+    explanation: 'Ostwald process for nitric acid production from nitrogen dioxide.',
+    type: 'synthesis',
+    conditions: { temperature: 'medium', pressure: 'elevated', catalyst: 'none' }
+  },
+  {
+    id: 'carbon_reduction_iron_ore',
+    reactants: ['Fe2O3', 'C'],
+    products: ['Fe', 'CO2'],
+    equation: '2Fe₂O₃ + 3C → 4Fe + 3CO₂',
+    explanation: 'Iron ore reduction in blast furnace using carbon (simplified).',
+    type: 'redox',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: null }
+  },
+  {
+    id: 'aluminum_extraction',
+    reactants: ['Al2O3'],
+    products: ['Al', 'O2'],
+    equation: '2Al₂O₃ → 4Al + 3O₂',
+    explanation: 'Electrolytic extraction of aluminum from bauxite (Hall-Héroult process).',
+    type: 'electrolysis',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: 'cryolite' }
+  },
+  
+  // Complex Ion Formation
+  {
+    id: 'copper_ammonia_complex',
+    reactants: ['CuSO4', 'NH3'],
+    products: ['[Cu(NH3)4]2+', 'SO4'],
+    equation: 'CuSO₄ + 4NH₃ → [Cu(NH₃)₄]²⁺ + SO₄²⁻',
+    explanation: 'Copper(II) sulfate forms deep blue tetraamminecopper(II) complex.',
+    type: 'complex_formation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'silver_ammonia_complex',
+    reactants: ['AgCl', 'NH3'],
+    products: ['[Ag(NH3)2]+', 'Cl-'],
+    equation: 'AgCl + 2NH₃ → [Ag(NH₃)₂]⁺ + Cl⁻',
+    explanation: 'Silver chloride dissolves in ammonia forming diammine silver(I) complex.',
+    type: 'complex_formation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
   }
 ];
 
