@@ -15,15 +15,16 @@
 }
 
 .result-card {
-  background: var(--white);
+  background: white;
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 25px 50px rgba(14, 165, 233, 0.3);
   max-width: 600px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   animation: slideIn 0.4s ease-out;
   position: relative;
+  border: 2px solid rgba(14, 165, 233, 0.2);
 }
 
 @keyframes slideIn {
@@ -400,4 +401,11 @@
     flex-wrap: wrap;
     gap: var(--spacing-xs);
   }
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] .result-card {
+  background: var(--dark-bg-secondary);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(14, 165, 233, 0.3);
 }

@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--chemistry-pink) 100%);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3);
   z-index: 1000;
   height: 80px;
   transition: box-shadow var(--transition-normal);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-container {
