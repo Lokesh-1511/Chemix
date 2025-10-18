@@ -3,9 +3,9 @@
 }
 
 .hero-section {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  color: var(--white);
-  padding: var(--spacing-2xl) 0;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: var(--spacing-2xl) var(--spacing-xl);
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -20,8 +20,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+  z-index: 0;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(0deg, var(--border-primary) 0px, transparent 1px, transparent 40px),
+    repeating-linear-gradient(90deg, var(--border-primary) 0px, transparent 1px, transparent 40px);
   opacity: 0.3;
+  z-index: 0;
 }
 
 .hero-content {
@@ -30,6 +41,7 @@
   z-index: 2;
   position: relative;
   animation: fadeIn 1s ease-out;
+  margin-left: var(--spacing-lg);
 }
 
 .hero-title {
@@ -58,6 +70,7 @@
   margin-bottom: var(--spacing-lg);
   opacity: 0.9;
   font-weight: 300;
+  color: var(--text-secondary);
 }
 
 .hero-description {
@@ -65,6 +78,7 @@
   margin-bottom: var(--spacing-xl);
   opacity: 0.85;
   line-height: 1.6;
+  color: var(--text-secondary);
 }
 
 .hero-actions {
@@ -87,29 +101,30 @@
 }
 
 .cta-button.primary {
-  background: var(--white);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: white;
 }
 
 .cta-button.primary:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);
   text-decoration: none;
-  color: var(--primary-color);
+  background: var(--primary-hover);
+  color: white;
 }
 
 .cta-button.secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--white);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-primary);
 }
 
 .cta-button.secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: var(--bg-tertiary);
+  border-color: var(--primary-color);
   transform: translateY(-3px);
   text-decoration: none;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .hero-visual {
@@ -129,16 +144,16 @@
 
 .floating-molecule {
   position: absolute;
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 1.25rem;
-  color: var(--white);
+  color: white;
   box-shadow: var(--shadow-lg);
-  backdrop-filter: blur(10px);
+  opacity: 0.9;
 }
 
 .molecule-1 {
@@ -179,15 +194,15 @@
 }
 
 .features-section {
-  padding: var(--spacing-2xl) 0;
-  background: var(--white);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: var(--bg-primary);
 }
 
 .section-title {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: var(--spacing-xl);
-  color: var(--gray-800);
+  color: var(--text-primary);
 }
 
 .features-grid {
@@ -198,13 +213,13 @@
 }
 
 .feature-card {
-  background: var(--white);
+  background: var(--bg-secondary);
   padding: var(--spacing-xl);
   border-radius: var(--radius-xl);
   text-align: center;
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
-  border: 1px solid var(--gray-200);
+  border: 1px solid var(--border-primary);
 }
 
 .feature-card:hover {
@@ -221,24 +236,24 @@
 .feature-title {
   font-size: 1.25rem;
   margin-bottom: var(--spacing-md);
-  color: var(--gray-800);
+  color: var(--text-primary);
 }
 
 .feature-description {
-  color: var(--gray-600);
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 0;
 }
 
 .getting-started-section {
-  padding: var(--spacing-2xl) 0;
-  background: var(--gray-50);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: var(--bg-secondary);
 }
 
 .section-description {
   text-align: center;
   font-size: 1.125rem;
-  color: var(--gray-600);
+  color: var(--text-secondary);
   margin-bottom: var(--spacing-xl);
   max-width: 600px;
   margin-left: auto;
@@ -266,7 +281,7 @@
   width: 40px;
   height: 40px;
   background: var(--primary-color);
-  color: var(--white);
+  color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -277,7 +292,7 @@
 
 .step-arrow {
   font-size: 1.5rem;
-  color: var(--gray-400);
+  color: var(--text-tertiary);
   margin: 0 var(--spacing-sm);
 }
 
@@ -287,7 +302,7 @@
   gap: var(--spacing-sm);
   padding: var(--spacing-lg) var(--spacing-xl);
   background: var(--primary-color);
-  color: var(--white);
+  color: white;
   text-decoration: none;
   border-radius: var(--radius-lg);
   font-size: 1.125rem;
@@ -302,7 +317,7 @@
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);
   text-decoration: none;
-  color: var(--white);
+  color: white;
 }
 
 /* Responsive Design */
@@ -310,17 +325,23 @@
   .hero-section {
     flex-direction: column;
     text-align: center;
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) var(--spacing-md);
   }
   
   .hero-content {
     max-width: 800px;
     margin-bottom: var(--spacing-xl);
+    margin-left: 0;
   }
   
   .chemistry-animation {
     width: 250px;
     height: 250px;
+  }
+  
+  .features-section,
+  .getting-started-section {
+    padding: var(--spacing-xl) var(--spacing-md);
   }
 }
 

@@ -1,5 +1,5 @@
 .about-page {
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) var(--spacing-lg);
   min-height: calc(100vh - 80px);
 }
 
@@ -28,7 +28,7 @@
 .about-content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--spacing-lg);
 }
 
 .about-section {
