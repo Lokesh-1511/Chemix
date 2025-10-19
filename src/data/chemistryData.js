@@ -134,6 +134,24 @@ export const initialElements = [
   ,{ id: 'NH4+', symbol: 'NH₄⁺', name: 'Ammonium Ion', type: 'ion', group: 'ion', unlocked: false }
   ,{ id: 'H+', symbol: 'H⁺', name: 'Hydrogen Ion (Proton)', type: 'ion', group: 'ion', unlocked: false }
   ,{ id: 'H3O+', symbol: 'H₃O⁺', name: 'Hydronium Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'Ga', symbol: 'Ga', name: 'Gallium', type: 'element', group: 'post-transition-metal', unlocked: false }
+  ,{ id: 'Ge', symbol: 'Ge', name: 'Germanium', type: 'element', group: 'metalloid', unlocked: false }
+  ,{ id: 'As', symbol: 'As', name: 'Arsenic', type: 'element', group: 'metalloid', unlocked: false }
+  ,{ id: 'Kr', symbol: 'Kr', name: 'Krypton', type: 'element', group: 'noble-gas', unlocked: false }
+  ,{ id: 'Xe', symbol: 'Xe', name: 'Xenon', type: 'element', group: 'noble-gas', unlocked: false }
+  ,{ id: 'Hf', symbol: 'Hf', name: 'Hafnium', type: 'element', group: 'transition-metal', unlocked: false }
+  ,{ id: 'Ta', symbol: 'Ta', name: 'Tantalum', type: 'element', group: 'transition-metal', unlocked: false }
+  ,{ id: 'Pr', symbol: 'Pr', name: 'Praseodymium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Pm', symbol: 'Pm', name: 'Promethium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'ClO3-', symbol: 'ClO₃⁻', name: 'Chlorate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'ClO4-', symbol: 'ClO₄⁻', name: 'Perchlorate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'MnO4-', symbol: 'MnO₄⁻', name: 'Permanganate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'Cr2O72-', symbol: 'Cr₂O₇²⁻', name: 'Dichromate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'S2O32-', symbol: 'S₂O₃²⁻', name: 'Thiosulfate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'HSO4-', symbol: 'HSO₄⁻', name: 'Bisulfate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'HCO3-', symbol: 'HCO₃⁻', name: 'Bicarbonate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'HPO42-', symbol: 'HPO₄²⁻', name: 'Hydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'H2PO4-', symbol: 'H₂PO₄⁻', name: 'Dihydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: false }
 ];
 
 
@@ -400,6 +418,87 @@ export const compounds = [
   { id: 'PH3', symbol: 'PH₃', name: 'Phosphine', type: 'compound', category: 'gas', unlocked: false },
   { id: 'AsH3', symbol: 'AsH₃', name: 'Arsine', type: 'compound', category: 'gas', unlocked: false },
   { id: 'B2H6', symbol: 'B₂H₆', name: 'Diborane', type: 'compound', category: 'gas', unlocked: false },
+  
+  // Additional Inorganic Compounds
+  { id: 'NH4OH', symbol: 'NH₄OH', name: 'Ammonium Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'Ba(OH)2', symbol: 'Ba(OH)₂', name: 'Barium Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'Sr(OH)2', symbol: 'Sr(OH)₂', name: 'Strontium Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'Al(OH)3', symbol: 'Al(OH)₃', name: 'Aluminum Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'Fe(OH)3', symbol: 'Fe(OH)₃', name: 'Iron(III) Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'Zn(OH)2', symbol: 'Zn(OH)₂', name: 'Zinc Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  { id: 'Cu(OH)2', symbol: 'Cu(OH)₂', name: 'Copper(II) Hydroxide', type: 'compound', category: 'base', unlocked: false },
+  
+  // Peroxides and Superoxides
+  { id: 'Na2O2', symbol: 'Na₂O₂', name: 'Sodium Peroxide', type: 'compound', category: 'peroxide', unlocked: false },
+  { id: 'BaO2', symbol: 'BaO₂', name: 'Barium Peroxide', type: 'compound', category: 'peroxide', unlocked: false },
+  { id: 'K2O2', symbol: 'K₂O₂', name: 'Potassium Peroxide', type: 'compound', category: 'peroxide', unlocked: false },
+  { id: 'KO2', symbol: 'KO₂', name: 'Potassium Superoxide', type: 'compound', category: 'superoxide', unlocked: false },
+  
+  // Complex Acids
+  { id: 'H3BO3', symbol: 'H₃BO₃', name: 'Boric Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'H2SiO3', symbol: 'H₂SiO₃', name: 'Silicic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'HIO3', symbol: 'HIO₃', name: 'Iodic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'HBrO3', symbol: 'HBrO₃', name: 'Bromic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'H2Cr2O7', symbol: 'H₂Cr₂O₇', name: 'Dichromic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'HMnO4', symbol: 'HMnO₄', name: 'Permanganic Acid', type: 'compound', category: 'acid', unlocked: false },
+  
+  // Organic Acids and Esters
+  { id: 'C3H6O2', symbol: 'C₃H₆O₂', name: 'Propionic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H8O2', symbol: 'C₄H₈O₂', name: 'Butyric Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H10O2', symbol: 'C₅H₁₀O₂', name: 'Valeric Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5COOH', symbol: 'C₆H₅COOH', name: 'Benzoic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'CH3COOC2H3', symbol: 'CH₃COOC₂H₃', name: 'Vinyl Acetate', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H6O2', symbol: 'C₃H₆O₂', name: 'Methyl Acetate', type: 'compound', category: 'organic', unlocked: false },
+  
+  // Aromatic Compounds
+  { id: 'C6H5F', symbol: 'C₆H₅F', name: 'Fluorobenzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H4Cl2', symbol: 'C₆H₄Cl₂', name: 'Dichlorobenzene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H3(NO2)3', symbol: 'C₆H₃(NO₂)₃', name: 'Trinitrotoluene (TNT)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C7H8O', symbol: 'C₇H₈O', name: 'Cresol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H4(OH)2', symbol: 'C₆H₄(OH)₂', name: 'Hydroquinone', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H3(OH)3', symbol: 'C₆H₃(OH)₃', name: 'Pyrogallol', type: 'compound', category: 'organic', unlocked: false },
+  
+  // Biochemical Compounds
+  { id: 'C5H10O5', symbol: 'C₅H₁₀O₅', name: 'Ribose', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H10O4', symbol: 'C₅H₁₀O₄', name: 'Deoxyribose', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5O7P', symbol: 'C₆H₅O₇P', name: 'Glucose-6-Phosphate', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H8O3', symbol: 'C₃H₈O₃', name: 'Glycerol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H4O2', symbol: 'C₂H₄O₂', name: 'Glycolic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H6O6', symbol: 'C₄H₆O₆', name: 'Tartaric Acid', type: 'compound', category: 'organic', unlocked: false },
+  
+  // Nitrogen Compounds
+  { id: 'N2H4', symbol: 'N₂H₄', name: 'Hydrazine', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'NH2OH', symbol: 'NH₂OH', name: 'Hydroxylamine', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'HN3', symbol: 'HN₃', name: 'Hydrazoic Acid', type: 'compound', category: 'acid', unlocked: false },
+  { id: 'N2O3', symbol: 'N₂O₃', name: 'Dinitrogen Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'NOCl', symbol: 'NOCl', name: 'Nitrosyl Chloride', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'NO2Cl', symbol: 'NO₂Cl', name: 'Nitryl Chloride', type: 'compound', category: 'gas', unlocked: false },
+  
+  // Phosphorus Compounds
+  { id: 'P4O10', symbol: 'P₄O₁₀', name: 'Phosphorus Pentoxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'P4O6', symbol: 'P₄O₆', name: 'Phosphorus Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'PCl3', symbol: 'PCl₃', name: 'Phosphorus Trichloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'PCl5', symbol: 'PCl₅', name: 'Phosphorus Pentachloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'POCl3', symbol: 'POCl₃', name: 'Phosphoryl Chloride', type: 'compound', category: 'compound', unlocked: false },
+  
+  // Silicon Compounds
+  { id: 'SiC', symbol: 'SiC', name: 'Silicon Carbide', type: 'compound', category: 'ceramic', unlocked: false },
+  { id: 'Si3N4', symbol: 'Si₃N₄', name: 'Silicon Nitride', type: 'compound', category: 'ceramic', unlocked: false },
+  { id: 'SiCl4', symbol: 'SiCl₄', name: 'Silicon Tetrachloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'Si(OC2H5)4', symbol: 'Si(OC₂H₅)₄', name: 'Tetraethyl Orthosilicate', type: 'compound', category: 'compound', unlocked: false },
+  
+  // Boron Compounds
+  { id: 'B2O3', symbol: 'B₂O₃', name: 'Boron Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'BCl3', symbol: 'BCl₃', name: 'Boron Trichloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'BF3', symbol: 'BF₃', name: 'Boron Trifluoride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'BN', symbol: 'BN', name: 'Boron Nitride', type: 'compound', category: 'ceramic', unlocked: false },
+  { id: 'Na2B4O7', symbol: 'Na₂B₄O₇', name: 'Borax', type: 'compound', category: 'salt', unlocked: false },
+  
+  // Rare Earth Compounds
+  { id: 'CeO2', symbol: 'CeO₂', name: 'Cerium(IV) Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Y2O3', symbol: 'Y₂O₃', name: 'Yttrium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'La2O3', symbol: 'La₂O₃', name: 'Lanthanum Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Nd2O3', symbol: 'Nd₂O₃', name: 'Neodymium Oxide', type: 'compound', category: 'oxide', unlocked: false },
 ];
 
 
@@ -1406,6 +1505,206 @@ export const reactionRules = [
     explanation: 'Silver chloride dissolves in ammonia forming diammine silver(I) complex.',
     type: 'complex_formation',
     conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Peroxide Reactions
+  {
+    id: 'sodium_peroxide_water',
+    reactants: ['Na2O2', 'H2O'],
+    products: ['NaOH', 'H2O2'],
+    equation: 'Na₂O₂ + 2H₂O → 2NaOH + H₂O₂',
+    explanation: 'Sodium peroxide reacts with water to form sodium hydroxide and hydrogen peroxide.',
+    type: 'hydrolysis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'potassium_superoxide_water',
+    reactants: ['KO2', 'H2O'],
+    products: ['KOH', 'O2', 'H2O2'],
+    equation: '4KO₂ + 2H₂O → 4KOH + 3O₂',
+    explanation: 'Potassium superoxide reacts vigorously with water releasing oxygen.',
+    type: 'hydrolysis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Hydrazine Reactions
+  {
+    id: 'hydrazine_combustion',
+    reactants: ['N2H4', 'O2'],
+    products: ['N2', 'H2O'],
+    equation: 'N₂H₄ + O₂ → N₂ + 2H₂O',
+    explanation: 'Hydrazine burns in oxygen releasing large amounts of energy.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Phosphorus Reactions
+  {
+    id: 'phosphorus_pentoxide_water',
+    reactants: ['P4O10', 'H2O'],
+    products: ['H3PO4'],
+    equation: 'P₄O₁₀ + 6H₂O → 4H₃PO₄',
+    explanation: 'Phosphorus pentoxide is a powerful desiccant that forms phosphoric acid.',
+    type: 'hydration',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'phosphorus_trichloride_water',
+    reactants: ['PCl3', 'H2O'],
+    products: ['H3PO3', 'HCl'],
+    equation: 'PCl₃ + 3H₂O → H₃PO₃ + 3HCl',
+    explanation: 'Phosphorus trichloride hydrolyzes to form phosphorous acid.',
+    type: 'hydrolysis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Silicon Reactions
+  {
+    id: 'silicon_carbide_formation',
+    reactants: ['Si', 'C'],
+    products: ['SiC'],
+    equation: 'Si + C → SiC',
+    explanation: 'Silicon carbide is formed at very high temperatures, used as an abrasive.',
+    type: 'synthesis',
+    conditions: { temperature: 'extreme', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'silicon_tetrachloride_water',
+    reactants: ['SiCl4', 'H2O'],
+    products: ['SiO2', 'HCl'],
+    equation: 'SiCl₄ + 2H₂O → SiO₂ + 4HCl',
+    explanation: 'Silicon tetrachloride hydrolyzes forming silica and hydrochloric acid.',
+    type: 'hydrolysis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Boron Reactions
+  {
+    id: 'boron_trifluoride_ammonia',
+    reactants: ['BF3', 'NH3'],
+    products: ['BF3NH3'],
+    equation: 'BF₃ + NH₃ → BF₃·NH₃',
+    explanation: 'Boron trifluoride forms a Lewis acid-base complex with ammonia.',
+    type: 'complex_formation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'borax_acid',
+    reactants: ['Na2B4O7', 'HCl'],
+    products: ['H3BO3', 'NaCl'],
+    equation: 'Na₂B₄O₇ + 2HCl + 5H₂O → 4H₃BO₃ + 2NaCl',
+    explanation: 'Borax reacts with acid to produce boric acid.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Nitrogen Oxide Reactions
+  {
+    id: 'nitrogen_dioxide_water',
+    reactants: ['NO2', 'H2O'],
+    products: ['HNO3', 'HNO2'],
+    equation: '2NO₂ + H₂O → HNO₃ + HNO₂',
+    explanation: 'Nitrogen dioxide disproportionates in water forming acids.',
+    type: 'disproportionation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'nitric_oxide_oxygen',
+    reactants: ['NO', 'O2'],
+    products: ['NO2'],
+    equation: '2NO + O₂ → 2NO₂',
+    explanation: 'Nitric oxide oxidizes to nitrogen dioxide in air.',
+    type: 'oxidation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Halogen Reactions
+  {
+    id: 'chlorine_sodium_hydroxide',
+    reactants: ['Cl2', 'NaOH'],
+    products: ['NaClO', 'NaCl', 'H2O'],
+    equation: 'Cl₂ + 2NaOH → NaClO + NaCl + H₂O',
+    explanation: 'Chlorine disproportionates in base forming hypochlorite (bleach).',
+    type: 'disproportionation',
+    conditions: { temperature: 'low', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'bromine_potassium_iodide',
+    reactants: ['Br2', 'KI'],
+    products: ['KBr', 'I2'],
+    equation: 'Br₂ + 2KI → 2KBr + I₂',
+    explanation: 'Bromine oxidizes iodide in a halogen displacement reaction.',
+    type: 'displacement',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Hydroxide Precipitation
+  {
+    id: 'aluminum_hydroxide_precipitation',
+    reactants: ['Al3+', 'OH-'],
+    products: ['Al(OH)3'],
+    equation: 'Al³⁺ + 3OH⁻ → Al(OH)₃↓',
+    explanation: 'Aluminum hydroxide precipitates as a white gelatinous solid.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'iron_III_hydroxide_precipitation',
+    reactants: ['Fe3+', 'OH-'],
+    products: ['Fe(OH)3'],
+    equation: 'Fe³⁺ + 3OH⁻ → Fe(OH)₃↓',
+    explanation: 'Iron(III) hydroxide precipitates as a rust-colored solid.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'copper_hydroxide_precipitation',
+    reactants: ['Cu2+', 'OH-'],
+    products: ['Cu(OH)2'],
+    equation: 'Cu²⁺ + 2OH⁻ → Cu(OH)₂↓',
+    explanation: 'Copper(II) hydroxide precipitates as a pale blue solid.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Thermite and High-Temperature Reactions
+  {
+    id: 'chromium_thermite',
+    reactants: ['Cr2O3', 'Al'],
+    products: ['Cr', 'Al2O3'],
+    equation: 'Cr₂O₃ + 2Al → 2Cr + Al₂O₃',
+    explanation: 'Aluminum reduces chromium oxide in an exothermic thermite reaction.',
+    type: 'reduction',
+    conditions: { temperature: 'extreme', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'manganese_dioxide_aluminum',
+    reactants: ['MnO2', 'Al'],
+    products: ['Mn', 'Al2O3'],
+    equation: '3MnO₂ + 4Al → 3Mn + 2Al₂O₃',
+    explanation: 'Aluminum thermite reduction of manganese dioxide.',
+    type: 'reduction',
+    conditions: { temperature: 'extreme', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Esterification Reactions
+  {
+    id: 'ethanol_acetic_acid_esterification',
+    reactants: ['C2H5OH', 'CH3COOH'],
+    products: ['CH3COOC2H5', 'H2O'],
+    equation: 'C₂H₅OH + CH₃COOH ⇌ CH₃COOC₂H₅ + H₂O',
+    explanation: 'Ethanol and acetic acid form ethyl acetate through esterification.',
+    type: 'esterification',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'H2SO4' }
+  },
+  {
+    id: 'methanol_benzoic_acid_esterification',
+    reactants: ['CH3OH', 'C6H5COOH'],
+    products: ['C6H5COOCH3', 'H2O'],
+    equation: 'CH₃OH + C₆H₅COOH ⇌ C₆H₅COOCH₃ + H₂O',
+    explanation: 'Methyl benzoate is formed from methanol and benzoic acid.',
+    type: 'esterification',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'H2SO4' }
   }
 ];
 
