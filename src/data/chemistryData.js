@@ -35,123 +35,123 @@ export const initialElements = [
   { id: 'Si', symbol: 'Si', name: 'Silicon', type: 'element', group: 'metalloid', unlocked: true },
   // Additional common elements
   { id: 'He', symbol: 'He', name: 'Helium', type: 'element', group: 'noble-gas', unlocked: true },
-  { id: 'Ne', symbol: 'Ne', name: 'Neon', type: 'element', group: 'noble-gas', unlocked: false },
-  { id: 'Ar', symbol: 'Ar', name: 'Argon', type: 'element', group: 'noble-gas', unlocked: false },
+  { id: 'Ne', symbol: 'Ne', name: 'Neon', type: 'element', group: 'noble-gas', unlocked: true },
+  { id: 'Ar', symbol: 'Ar', name: 'Argon', type: 'element', group: 'noble-gas', unlocked: true },
   { id: 'Li', symbol: 'Li', name: 'Lithium', type: 'element', group: 'alkali-metal', unlocked: true },
-  { id: 'Be', symbol: 'Be', name: 'Beryllium', type: 'element', group: 'alkaline-earth', unlocked: false },
-  { id: 'Ti', symbol: 'Ti', name: 'Titanium', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Cr', symbol: 'Cr', name: 'Chromium', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Mn', symbol: 'Mn', name: 'Manganese', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Co', symbol: 'Co', name: 'Cobalt', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Ag', symbol: 'Ag', name: 'Silver', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Au', symbol: 'Au', name: 'Gold', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Pb', symbol: 'Pb', name: 'Lead', type: 'element', group: 'post-transition-metal', unlocked: false },
-  { id: 'Hg', symbol: 'Hg', name: 'Mercury', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Sn', symbol: 'Sn', name: 'Tin', type: 'element', group: 'post-transition-metal', unlocked: false },
-  { id: 'B', symbol: 'B', name: 'Boron', type: 'element', group: 'metalloid', unlocked: false },
+  { id: 'Be', symbol: 'Be', name: 'Beryllium', type: 'element', group: 'alkaline-earth', unlocked: true },
+  { id: 'Ti', symbol: 'Ti', name: 'Titanium', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Cr', symbol: 'Cr', name: 'Chromium', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Mn', symbol: 'Mn', name: 'Manganese', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Co', symbol: 'Co', name: 'Cobalt', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Ag', symbol: 'Ag', name: 'Silver', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Au', symbol: 'Au', name: 'Gold', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Pb', symbol: 'Pb', name: 'Lead', type: 'element', group: 'post-transition-metal', unlocked: true },
+  { id: 'Hg', symbol: 'Hg', name: 'Mercury', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Sn', symbol: 'Sn', name: 'Tin', type: 'element', group: 'post-transition-metal', unlocked: true },
+  { id: 'B', symbol: 'B', name: 'Boron', type: 'element', group: 'metalloid', unlocked: true },
   // Additional elements for breadth
-  { id: 'Sc', symbol: 'Sc', name: 'Scandium', type: 'element', group: 'transition-metal', unlocked: false },
+  { id: 'Sc', symbol: 'Sc', name: 'Scandium', type: 'element', group: 'transition-metal', unlocked: true },
     { id: 'HClO', symbol: 'HClO', name: 'Hypochlorous Acid', type: 'compound', category: 'acid', unlocked: false },
-  { id: 'V', symbol: 'V', name: 'Vanadium', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Sr', symbol: 'Sr', name: 'Strontium', type: 'element', group: 'alkaline-earth', unlocked: false },
-  { id: 'Rb', symbol: 'Rb', name: 'Rubidium', type: 'element', group: 'alkali-metal', unlocked: false },
-  { id: 'Cs', symbol: 'Cs', name: 'Cesium', type: 'element', group: 'alkali-metal', unlocked: false },
-  { id: 'Pt', symbol: 'Pt', name: 'Platinum', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Pd', symbol: 'Pd', name: 'Palladium', type: 'element', group: 'transition-metal', unlocked: false },
-  { id: 'Se', symbol: 'Se', name: 'Selenium', type: 'element', group: 'nonmetal', unlocked: false },
-  { id: 'Te', symbol: 'Te', name: 'Tellurium', type: 'element', group: 'metalloid', unlocked: false },
-  { id: 'U', symbol: 'U', name: 'Uranium', type: 'element', group: 'actinide', unlocked: false },
-  { id: 'Li+', symbol: 'Li⁺', name: 'Lithium Ion', type: 'ion', group: 'ion', unlocked: false }
+  { id: 'V', symbol: 'V', name: 'Vanadium', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Sr', symbol: 'Sr', name: 'Strontium', type: 'element', group: 'alkaline-earth', unlocked: true },
+  { id: 'Rb', symbol: 'Rb', name: 'Rubidium', type: 'element', group: 'alkali-metal', unlocked: true },
+  { id: 'Cs', symbol: 'Cs', name: 'Cesium', type: 'element', group: 'alkali-metal', unlocked: true },
+  { id: 'Pt', symbol: 'Pt', name: 'Platinum', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Pd', symbol: 'Pd', name: 'Palladium', type: 'element', group: 'transition-metal', unlocked: true },
+  { id: 'Se', symbol: 'Se', name: 'Selenium', type: 'element', group: 'nonmetal', unlocked: true },
+  { id: 'Te', symbol: 'Te', name: 'Tellurium', type: 'element', group: 'metalloid', unlocked: true },
+  { id: 'U', symbol: 'U', name: 'Uranium', type: 'element', group: 'actinide', unlocked: true },
+  { id: 'Li+', symbol: 'Li⁺', name: 'Lithium Ion', type: 'ion', group: 'ion', unlocked: true }
   // Additional transition/lanthanide elements and nickel
-  ,{ id: 'Ni', symbol: 'Ni', name: 'Nickel', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'La', symbol: 'La', name: 'Lanthanum', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Ce', symbol: 'Ce', name: 'Cerium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Nd', symbol: 'Nd', name: 'Neodymium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Sm', symbol: 'Sm', name: 'Samarium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Eu', symbol: 'Eu', name: 'Europium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Gd', symbol: 'Gd', name: 'Gadolinium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Tb', symbol: 'Tb', name: 'Terbium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Dy', symbol: 'Dy', name: 'Dysprosium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Ho', symbol: 'Ho', name: 'Holmium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Er', symbol: 'Er', name: 'Erbium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Tm', symbol: 'Tm', name: 'Thulium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Yb', symbol: 'Yb', name: 'Ytterbium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Lu', symbol: 'Lu', name: 'Lutetium', type: 'element', group: 'lanthanide', unlocked: false }
+  ,{ id: 'Ni', symbol: 'Ni', name: 'Nickel', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'La', symbol: 'La', name: 'Lanthanum', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Ce', symbol: 'Ce', name: 'Cerium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Nd', symbol: 'Nd', name: 'Neodymium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Sm', symbol: 'Sm', name: 'Samarium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Eu', symbol: 'Eu', name: 'Europium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Gd', symbol: 'Gd', name: 'Gadolinium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Tb', symbol: 'Tb', name: 'Terbium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Dy', symbol: 'Dy', name: 'Dysprosium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Ho', symbol: 'Ho', name: 'Holmium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Er', symbol: 'Er', name: 'Erbium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Tm', symbol: 'Tm', name: 'Thulium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Yb', symbol: 'Yb', name: 'Ytterbium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Lu', symbol: 'Lu', name: 'Lutetium', type: 'element', group: 'lanthanide', unlocked: true }
   
   // Additional elements to complete periodic table coverage
-  ,{ id: 'Y', symbol: 'Y', name: 'Yttrium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Zr', symbol: 'Zr', name: 'Zirconium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Nb', symbol: 'Nb', name: 'Niobium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Mo', symbol: 'Mo', name: 'Molybdenum', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Tc', symbol: 'Tc', name: 'Technetium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Ru', symbol: 'Ru', name: 'Ruthenium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Rh', symbol: 'Rh', name: 'Rhodium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Cd', symbol: 'Cd', name: 'Cadmium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'In', symbol: 'In', name: 'Indium', type: 'element', group: 'post-transition-metal', unlocked: false }
-  ,{ id: 'Sb', symbol: 'Sb', name: 'Antimony', type: 'element', group: 'metalloid', unlocked: false }
-  ,{ id: 'Ba', symbol: 'Ba', name: 'Barium', type: 'element', group: 'alkaline-earth', unlocked: false }
-  ,{ id: 'W', symbol: 'W', name: 'Tungsten', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Re', symbol: 'Re', name: 'Rhenium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Os', symbol: 'Os', name: 'Osmium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Ir', symbol: 'Ir', name: 'Iridium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Tl', symbol: 'Tl', name: 'Thallium', type: 'element', group: 'post-transition-metal', unlocked: false }
-  ,{ id: 'Bi', symbol: 'Bi', name: 'Bismuth', type: 'element', group: 'post-transition-metal', unlocked: false }
-  ,{ id: 'Po', symbol: 'Po', name: 'Polonium', type: 'element', group: 'metalloid', unlocked: false }
-  ,{ id: 'At', symbol: 'At', name: 'Astatine', type: 'element', group: 'halogen', unlocked: false }
-  ,{ id: 'Rn', symbol: 'Rn', name: 'Radon', type: 'element', group: 'noble-gas', unlocked: false }
-  ,{ id: 'Fr', symbol: 'Fr', name: 'Francium', type: 'element', group: 'alkali-metal', unlocked: false }
-  ,{ id: 'Ra', symbol: 'Ra', name: 'Radium', type: 'element', group: 'alkaline-earth', unlocked: false }
+  ,{ id: 'Y', symbol: 'Y', name: 'Yttrium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Zr', symbol: 'Zr', name: 'Zirconium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Nb', symbol: 'Nb', name: 'Niobium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Mo', symbol: 'Mo', name: 'Molybdenum', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Tc', symbol: 'Tc', name: 'Technetium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Ru', symbol: 'Ru', name: 'Ruthenium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Rh', symbol: 'Rh', name: 'Rhodium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Cd', symbol: 'Cd', name: 'Cadmium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'In', symbol: 'In', name: 'Indium', type: 'element', group: 'post-transition-metal', unlocked: true }
+  ,{ id: 'Sb', symbol: 'Sb', name: 'Antimony', type: 'element', group: 'metalloid', unlocked: true }
+  ,{ id: 'Ba', symbol: 'Ba', name: 'Barium', type: 'element', group: 'alkaline-earth', unlocked: true }
+  ,{ id: 'W', symbol: 'W', name: 'Tungsten', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Re', symbol: 'Re', name: 'Rhenium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Os', symbol: 'Os', name: 'Osmium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Ir', symbol: 'Ir', name: 'Iridium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Tl', symbol: 'Tl', name: 'Thallium', type: 'element', group: 'post-transition-metal', unlocked: true }
+  ,{ id: 'Bi', symbol: 'Bi', name: 'Bismuth', type: 'element', group: 'post-transition-metal', unlocked: true }
+  ,{ id: 'Po', symbol: 'Po', name: 'Polonium', type: 'element', group: 'metalloid', unlocked: true }
+  ,{ id: 'At', symbol: 'At', name: 'Astatine', type: 'element', group: 'halogen', unlocked: true }
+  ,{ id: 'Rn', symbol: 'Rn', name: 'Radon', type: 'element', group: 'noble-gas', unlocked: true }
+  ,{ id: 'Fr', symbol: 'Fr', name: 'Francium', type: 'element', group: 'alkali-metal', unlocked: true }
+  ,{ id: 'Ra', symbol: 'Ra', name: 'Radium', type: 'element', group: 'alkaline-earth', unlocked: true }
   
   // Actinides
-  ,{ id: 'Ac', symbol: 'Ac', name: 'Actinium', type: 'element', group: 'actinide', unlocked: false }
-  ,{ id: 'Th', symbol: 'Th', name: 'Thorium', type: 'element', group: 'actinide', unlocked: false }
-  ,{ id: 'Pa', symbol: 'Pa', name: 'Protactinium', type: 'element', group: 'actinide', unlocked: false }
-  ,{ id: 'Np', symbol: 'Np', name: 'Neptunium', type: 'element', group: 'actinide', unlocked: false }
-  ,{ id: 'Pu', symbol: 'Pu', name: 'Plutonium', type: 'element', group: 'actinide', unlocked: false }
-  ,{ id: 'Am', symbol: 'Am', name: 'Americium', type: 'element', group: 'actinide', unlocked: false }
-  ,{ id: 'Cm', symbol: 'Cm', name: 'Curium', type: 'element', group: 'actinide', unlocked: false }
+  ,{ id: 'Ac', symbol: 'Ac', name: 'Actinium', type: 'element', group: 'actinide', unlocked: true }
+  ,{ id: 'Th', symbol: 'Th', name: 'Thorium', type: 'element', group: 'actinide', unlocked: true }
+  ,{ id: 'Pa', symbol: 'Pa', name: 'Protactinium', type: 'element', group: 'actinide', unlocked: true }
+  ,{ id: 'Np', symbol: 'Np', name: 'Neptunium', type: 'element', group: 'actinide', unlocked: true }
+  ,{ id: 'Pu', symbol: 'Pu', name: 'Plutonium', type: 'element', group: 'actinide', unlocked: true }
+  ,{ id: 'Am', symbol: 'Am', name: 'Americium', type: 'element', group: 'actinide', unlocked: true }
+  ,{ id: 'Cm', symbol: 'Cm', name: 'Curium', type: 'element', group: 'actinide', unlocked: true }
   
   // Additional ions
-  ,{ id: 'Na+', symbol: 'Na⁺', name: 'Sodium Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'K+', symbol: 'K⁺', name: 'Potassium Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Ca2+', symbol: 'Ca²⁺', name: 'Calcium Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Mg2+', symbol: 'Mg²⁺', name: 'Magnesium Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Fe2+', symbol: 'Fe²⁺', name: 'Iron(II) Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Fe3+', symbol: 'Fe³⁺', name: 'Iron(III) Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Cu+', symbol: 'Cu⁺', name: 'Copper(I) Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Cu2+', symbol: 'Cu²⁺', name: 'Copper(II) Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Zn2+', symbol: 'Zn²⁺', name: 'Zinc Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Ag+', symbol: 'Ag⁺', name: 'Silver Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Al3+', symbol: 'Al³⁺', name: 'Aluminum Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Cl-', symbol: 'Cl⁻', name: 'Chloride Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Br-', symbol: 'Br⁻', name: 'Bromide Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'I-', symbol: 'I⁻', name: 'Iodide Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'OH-', symbol: 'OH⁻', name: 'Hydroxide Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'SO42-', symbol: 'SO₄²⁻', name: 'Sulfate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'NO3-', symbol: 'NO₃⁻', name: 'Nitrate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'CO32-', symbol: 'CO₃²⁻', name: 'Carbonate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'PO43-', symbol: 'PO₄³⁻', name: 'Phosphate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'NH4+', symbol: 'NH₄⁺', name: 'Ammonium Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'H+', symbol: 'H⁺', name: 'Hydrogen Ion (Proton)', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'H3O+', symbol: 'H₃O⁺', name: 'Hydronium Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Ga', symbol: 'Ga', name: 'Gallium', type: 'element', group: 'post-transition-metal', unlocked: false }
-  ,{ id: 'Ge', symbol: 'Ge', name: 'Germanium', type: 'element', group: 'metalloid', unlocked: false }
-  ,{ id: 'As', symbol: 'As', name: 'Arsenic', type: 'element', group: 'metalloid', unlocked: false }
-  ,{ id: 'Kr', symbol: 'Kr', name: 'Krypton', type: 'element', group: 'noble-gas', unlocked: false }
-  ,{ id: 'Xe', symbol: 'Xe', name: 'Xenon', type: 'element', group: 'noble-gas', unlocked: false }
-  ,{ id: 'Hf', symbol: 'Hf', name: 'Hafnium', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Ta', symbol: 'Ta', name: 'Tantalum', type: 'element', group: 'transition-metal', unlocked: false }
-  ,{ id: 'Pr', symbol: 'Pr', name: 'Praseodymium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'Pm', symbol: 'Pm', name: 'Promethium', type: 'element', group: 'lanthanide', unlocked: false }
-  ,{ id: 'ClO3-', symbol: 'ClO₃⁻', name: 'Chlorate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'ClO4-', symbol: 'ClO₄⁻', name: 'Perchlorate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'MnO4-', symbol: 'MnO₄⁻', name: 'Permanganate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'Cr2O72-', symbol: 'Cr₂O₇²⁻', name: 'Dichromate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'S2O32-', symbol: 'S₂O₃²⁻', name: 'Thiosulfate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'HSO4-', symbol: 'HSO₄⁻', name: 'Bisulfate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'HCO3-', symbol: 'HCO₃⁻', name: 'Bicarbonate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'HPO42-', symbol: 'HPO₄²⁻', name: 'Hydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: false }
-  ,{ id: 'H2PO4-', symbol: 'H₂PO₄⁻', name: 'Dihydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: false }
+  ,{ id: 'Na+', symbol: 'Na⁺', name: 'Sodium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'K+', symbol: 'K⁺', name: 'Potassium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ca2+', symbol: 'Ca²⁺', name: 'Calcium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Mg2+', symbol: 'Mg²⁺', name: 'Magnesium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Fe2+', symbol: 'Fe²⁺', name: 'Iron(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Fe3+', symbol: 'Fe³⁺', name: 'Iron(III) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cu+', symbol: 'Cu⁺', name: 'Copper(I) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cu2+', symbol: 'Cu²⁺', name: 'Copper(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Zn2+', symbol: 'Zn²⁺', name: 'Zinc Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ag+', symbol: 'Ag⁺', name: 'Silver Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Al3+', symbol: 'Al³⁺', name: 'Aluminum Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cl-', symbol: 'Cl⁻', name: 'Chloride Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Br-', symbol: 'Br⁻', name: 'Bromide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'I-', symbol: 'I⁻', name: 'Iodide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'OH-', symbol: 'OH⁻', name: 'Hydroxide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'SO42-', symbol: 'SO₄²⁻', name: 'Sulfate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'NO3-', symbol: 'NO₃⁻', name: 'Nitrate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'CO32-', symbol: 'CO₃²⁻', name: 'Carbonate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'PO43-', symbol: 'PO₄³⁻', name: 'Phosphate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'NH4+', symbol: 'NH₄⁺', name: 'Ammonium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'H+', symbol: 'H⁺', name: 'Hydrogen Ion (Proton)', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'H3O+', symbol: 'H₃O⁺', name: 'Hydronium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ga', symbol: 'Ga', name: 'Gallium', type: 'element', group: 'post-transition-metal', unlocked: true }
+  ,{ id: 'Ge', symbol: 'Ge', name: 'Germanium', type: 'element', group: 'metalloid', unlocked: true }
+  ,{ id: 'As', symbol: 'As', name: 'Arsenic', type: 'element', group: 'metalloid', unlocked: true }
+  ,{ id: 'Kr', symbol: 'Kr', name: 'Krypton', type: 'element', group: 'noble-gas', unlocked: true }
+  ,{ id: 'Xe', symbol: 'Xe', name: 'Xenon', type: 'element', group: 'noble-gas', unlocked: true }
+  ,{ id: 'Hf', symbol: 'Hf', name: 'Hafnium', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Ta', symbol: 'Ta', name: 'Tantalum', type: 'element', group: 'transition-metal', unlocked: true }
+  ,{ id: 'Pr', symbol: 'Pr', name: 'Praseodymium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'Pm', symbol: 'Pm', name: 'Promethium', type: 'element', group: 'lanthanide', unlocked: true }
+  ,{ id: 'ClO3-', symbol: 'ClO₃⁻', name: 'Chlorate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'ClO4-', symbol: 'ClO₄⁻', name: 'Perchlorate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'MnO4-', symbol: 'MnO₄⁻', name: 'Permanganate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cr2O72-', symbol: 'Cr₂O₇²⁻', name: 'Dichromate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'S2O32-', symbol: 'S₂O₃²⁻', name: 'Thiosulfate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'HSO4-', symbol: 'HSO₄⁻', name: 'Bisulfate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'HCO3-', symbol: 'HCO₃⁻', name: 'Bicarbonate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'HPO42-', symbol: 'HPO₄²⁻', name: 'Hydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'H2PO4-', symbol: 'H₂PO₄⁻', name: 'Dihydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: true }
 ];
 
 
