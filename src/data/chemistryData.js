@@ -1888,6 +1888,425 @@ export const reactionRules = [
     explanation: 'Methyl benzoate is formed from methanol and benzoic acid.',
     type: 'esterification',
     conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'H2SO4' }
+  },
+  
+  // More Acid-Base Neutralization Reactions
+  {
+    id: 'sulfuric_acid_sodium_hydroxide',
+    reactants: ['H2SO4', 'NaOH'],
+    products: ['Na2SO4', 'H2O'],
+    equation: 'H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O',
+    explanation: 'Strong acid-strong base neutralization forming sodium sulfate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'nitric_acid_potassium_hydroxide',
+    reactants: ['HNO3', 'KOH'],
+    products: ['KNO3', 'H2O'],
+    equation: 'HNO₃ + KOH → KNO₃ + H₂O',
+    explanation: 'Nitric acid neutralizes potassium hydroxide to form potassium nitrate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'phosphoric_acid_calcium_hydroxide',
+    reactants: ['H3PO4', 'Ca(OH)2'],
+    products: ['Ca3(PO4)2', 'H2O'],
+    equation: '2H₃PO₄ + 3Ca(OH)₂ → Ca₃(PO₄)₂ + 6H₂O',
+    explanation: 'Phosphoric acid reacts with calcium hydroxide to form calcium phosphate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'acetic_acid_magnesium_hydroxide',
+    reactants: ['CH3COOH', 'Mg(OH)2'],
+    products: ['Mg(CH3COO)2', 'H2O'],
+    equation: '2CH₃COOH + Mg(OH)₂ → Mg(CH₃COO)₂ + 2H₂O',
+    explanation: 'Acetic acid neutralizes magnesium hydroxide to form magnesium acetate.',
+    type: 'acid_base',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Metal Oxide Reactions with Water
+  {
+    id: 'sodium_oxide_water',
+    reactants: ['Na2O', 'H2O'],
+    products: ['NaOH'],
+    equation: 'Na₂O + H₂O → 2NaOH',
+    explanation: 'Sodium oxide dissolves in water to form sodium hydroxide solution.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'calcium_oxide_water',
+    reactants: ['CaO', 'H2O'],
+    products: ['Ca(OH)2'],
+    equation: 'CaO + H₂O → Ca(OH)₂',
+    explanation: 'Quicklime reacts with water to form slaked lime (calcium hydroxide).',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'magnesium_oxide_water',
+    reactants: ['MgO', 'H2O'],
+    products: ['Mg(OH)2'],
+    equation: 'MgO + H₂O → Mg(OH)₂',
+    explanation: 'Magnesium oxide reacts slowly with water to form magnesium hydroxide.',
+    type: 'synthesis',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Non-metal Oxide Reactions with Water (Acid Formation)
+  {
+    id: 'sulfur_trioxide_water',
+    reactants: ['SO3', 'H2O'],
+    products: ['H2SO4'],
+    equation: 'SO₃ + H₂O → H₂SO₄',
+    explanation: 'Sulfur trioxide dissolves in water to form sulfuric acid.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'carbon_dioxide_water',
+    reactants: ['CO2', 'H2O'],
+    products: ['H2CO3'],
+    equation: 'CO₂ + H₂O ⇌ H₂CO₃',
+    explanation: 'Carbon dioxide dissolves in water forming carbonic acid.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'nitrogen_dioxide_water',
+    reactants: ['NO2', 'H2O'],
+    products: ['HNO3', 'HNO2'],
+    equation: '2NO₂ + H₂O → HNO₃ + HNO₂',
+    explanation: 'Nitrogen dioxide reacts with water to form nitric and nitrous acids.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'phosphorus_pentoxide_water',
+    reactants: ['P4O10', 'H2O'],
+    products: ['H3PO4'],
+    equation: 'P₄O₁₀ + 6H₂O → 4H₃PO₄',
+    explanation: 'Phosphorus pentoxide reacts vigorously with water to form phosphoric acid.',
+    type: 'synthesis',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Metal Carbonate Decomposition
+  {
+    id: 'calcium_carbonate_decomposition',
+    reactants: ['CaCO3'],
+    products: ['CaO', 'CO2'],
+    equation: 'CaCO₃ → CaO + CO₂',
+    explanation: 'Limestone decomposes on heating to form quicklime and carbon dioxide.',
+    type: 'decomposition',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'magnesium_carbonate_decomposition',
+    reactants: ['MgCO3'],
+    products: ['MgO', 'CO2'],
+    equation: 'MgCO₃ → MgO + CO₂',
+    explanation: 'Magnesium carbonate decomposes on heating.',
+    type: 'decomposition',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'sodium_carbonate_decomposition',
+    reactants: ['Na2CO3'],
+    products: ['Na2O', 'CO2'],
+    equation: 'Na₂CO₃ → Na₂O + CO₂',
+    explanation: 'Sodium carbonate decomposes at very high temperatures.',
+    type: 'decomposition',
+    conditions: { temperature: 'extreme', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Metal Hydroxide Decomposition
+  {
+    id: 'calcium_hydroxide_decomposition',
+    reactants: ['Ca(OH)2'],
+    products: ['CaO', 'H2O'],
+    equation: 'Ca(OH)₂ → CaO + H₂O',
+    explanation: 'Calcium hydroxide decomposes on heating to form calcium oxide.',
+    type: 'decomposition',
+    conditions: { temperature: 'very_high', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'copper_hydroxide_decomposition',
+    reactants: ['Cu(OH)2'],
+    products: ['CuO', 'H2O'],
+    equation: 'Cu(OH)₂ → CuO + H₂O',
+    explanation: 'Copper(II) hydroxide decomposes to black copper oxide.',
+    type: 'decomposition',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Precipitation Reactions
+  {
+    id: 'silver_nitrate_sodium_chloride',
+    reactants: ['AgNO3', 'NaCl'],
+    products: ['AgCl', 'NaNO3'],
+    equation: 'AgNO₃ + NaCl → AgCl↓ + NaNO₃',
+    explanation: 'Silver chloride precipitates as a white solid.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'barium_chloride_sodium_sulfate',
+    reactants: ['BaCl2', 'Na2SO4'],
+    products: ['BaSO4', 'NaCl'],
+    equation: 'BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl',
+    explanation: 'Barium sulfate precipitates as a white insoluble solid.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'lead_nitrate_potassium_iodide',
+    reactants: ['Pb(NO3)2', 'KI'],
+    products: ['PbI2', 'KNO3'],
+    equation: 'Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃',
+    explanation: 'Lead iodide precipitates as bright yellow crystals.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'calcium_chloride_sodium_carbonate',
+    reactants: ['CaCl2', 'Na2CO3'],
+    products: ['CaCO3', 'NaCl'],
+    equation: 'CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2NaCl',
+    explanation: 'Calcium carbonate precipitates as a white solid.',
+    type: 'precipitation',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Displacement Reactions
+  {
+    id: 'zinc_copper_sulfate',
+    reactants: ['Zn', 'CuSO4'],
+    products: ['ZnSO4', 'Cu'],
+    equation: 'Zn + CuSO₄ → ZnSO₄ + Cu',
+    explanation: 'Zinc displaces copper from copper sulfate solution.',
+    type: 'single_displacement',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'magnesium_iron_chloride',
+    reactants: ['Mg', 'FeCl3'],
+    products: ['MgCl2', 'Fe'],
+    equation: '3Mg + 2FeCl₃ → 3MgCl₂ + 2Fe',
+    explanation: 'Magnesium displaces iron from iron(III) chloride.',
+    type: 'single_displacement',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'aluminum_silver_nitrate',
+    reactants: ['Al', 'AgNO3'],
+    products: ['Al(NO3)3', 'Ag'],
+    equation: 'Al + 3AgNO₃ → Al(NO₃)₃ + 3Ag',
+    explanation: 'Aluminum displaces silver from silver nitrate solution.',
+    type: 'single_displacement',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Organic Combustion Reactions
+  {
+    id: 'methanol_combustion',
+    reactants: ['CH3OH', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: '2CH₃OH + 3O₂ → 2CO₂ + 4H₂O',
+    explanation: 'Methanol burns in oxygen to produce carbon dioxide and water.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'glucose_combustion',
+    reactants: ['C6H12O6', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O',
+    explanation: 'Glucose oxidation (cellular respiration or combustion).',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'enzyme' }
+  },
+  {
+    id: 'benzene_combustion',
+    reactants: ['C6H6', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: '2C₆H₆ + 15O₂ → 12CO₂ + 6H₂O',
+    explanation: 'Benzene combusts in oxygen with a sooty flame.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'acetylene_combustion',
+    reactants: ['C2H2', 'O2'],
+    products: ['CO2', 'H2O'],
+    equation: '2C₂H₂ + 5O₂ → 4CO₂ + 2H₂O',
+    explanation: 'Acetylene burns with a very hot flame, used in welding.',
+    type: 'combustion',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Addition Reactions
+  {
+    id: 'ethene_hydrogenation',
+    reactants: ['C2H4', 'H2'],
+    products: ['C2H6'],
+    equation: 'C₂H₄ + H₂ → C₂H₆',
+    explanation: 'Ethene is hydrogenated to ethane using a catalyst.',
+    type: 'addition',
+    conditions: { temperature: 'medium', pressure: 'high', catalyst: 'nickel' }
+  },
+  {
+    id: 'ethene_halogenation_bromine',
+    reactants: ['C2H4', 'Br2'],
+    products: ['C2H4Br2'],
+    equation: 'C₂H₄ + Br₂ → C₂H₄Br₂',
+    explanation: 'Ethene adds bromine to form 1,2-dibromoethane.',
+    type: 'addition',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'propene_hydrogen_halide',
+    reactants: ['C3H6', 'HCl'],
+    products: ['C3H7Cl'],
+    equation: 'C₃H₆ + HCl → C₃H₇Cl',
+    explanation: 'Propene adds hydrogen chloride following Markovnikov\'s rule.',
+    type: 'addition',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Redox Reactions with Permanganate
+  {
+    id: 'permanganate_iron_oxidation',
+    reactants: ['KMnO4', 'FeSO4', 'H2SO4'],
+    products: ['Fe2(SO4)3', 'MnSO4', 'K2SO4', 'H2O'],
+    equation: '10FeSO₄ + 2KMnO₄ + 8H₂SO₄ → 5Fe₂(SO₄)₃ + 2MnSO₄ + K₂SO₄ + 8H₂O',
+    explanation: 'Permanganate oxidizes iron(II) to iron(III) in acidic solution.',
+    type: 'redox',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'acid' }
+  },
+  {
+    id: 'dichromate_ethanol_oxidation',
+    reactants: ['K2Cr2O7', 'C2H5OH', 'H2SO4'],
+    products: ['CH3COOH', 'Cr2(SO4)3', 'K2SO4', 'H2O'],
+    equation: '3C₂H₅OH + 2K₂Cr₂O₇ + 8H₂SO₄ → 3CH₃COOH + 2Cr₂(SO₄)₃ + 2K₂SO₄ + 11H₂O',
+    explanation: 'Dichromate oxidizes ethanol to acetic acid.',
+    type: 'redox',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'acid' }
+  },
+  
+  // Halogenation of Alkanes
+  {
+    id: 'methane_chlorination',
+    reactants: ['CH4', 'Cl2'],
+    products: ['CH3Cl', 'HCl'],
+    equation: 'CH₄ + Cl₂ → CH₃Cl + HCl',
+    explanation: 'Methane undergoes free radical substitution with chlorine in sunlight.',
+    type: 'substitution',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'light' }
+  },
+  {
+    id: 'ethane_bromination',
+    reactants: ['C2H6', 'Br2'],
+    products: ['C2H5Br', 'HBr'],
+    equation: 'C₂H₆ + Br₂ → C₂H₅Br + HBr',
+    explanation: 'Ethane reacts with bromine in UV light to form bromoethane.',
+    type: 'substitution',
+    conditions: { temperature: 'room', pressure: 'normal', catalyst: 'light' }
+  },
+  
+  // Dehydration Reactions
+  {
+    id: 'ethanol_dehydration',
+    reactants: ['C2H5OH'],
+    products: ['C2H4', 'H2O'],
+    equation: 'C₂H₅OH → C₂H₄ + H₂O',
+    explanation: 'Ethanol undergoes dehydration to form ethene.',
+    type: 'elimination',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'H2SO4' }
+  },
+  {
+    id: 'propanol_dehydration',
+    reactants: ['C3H7OH'],
+    products: ['C3H6', 'H2O'],
+    equation: 'C₃H₇OH → C₃H₆ + H₂O',
+    explanation: 'Propanol dehydrates to form propene.',
+    type: 'elimination',
+    conditions: { temperature: 'high', pressure: 'normal', catalyst: 'H2SO4' }
+  },
+  
+  // Saponification
+  {
+    id: 'ethyl_acetate_hydrolysis',
+    reactants: ['CH3COOC2H5', 'NaOH'],
+    products: ['CH3COONa', 'C2H5OH'],
+    equation: 'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH',
+    explanation: 'Base-catalyzed hydrolysis of ester (saponification).',
+    type: 'hydrolysis',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'base' }
+  },
+  
+  // Sulfide Formation
+  {
+    id: 'hydrogen_sulfide_iron',
+    reactants: ['H2S', 'Fe'],
+    products: ['FeS', 'H2'],
+    equation: 'H₂S + Fe → FeS + H₂',
+    explanation: 'Iron reacts with hydrogen sulfide to form iron sulfide.',
+    type: 'synthesis',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'none' }
+  },
+  {
+    id: 'sodium_sulfur',
+    reactants: ['Na', 'S'],
+    products: ['Na2S'],
+    equation: '2Na + S → Na₂S',
+    explanation: 'Sodium reacts with sulfur to form sodium sulfide.',
+    type: 'synthesis',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Nitrate Formation
+  {
+    id: 'copper_nitric_acid',
+    reactants: ['Cu', 'HNO3'],
+    products: ['Cu(NO3)2', 'NO2', 'H2O'],
+    equation: '3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O',
+    explanation: 'Copper reacts with concentrated nitric acid producing nitrogen dioxide.',
+    type: 'redox',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'none' }
+  },
+  
+  // Polymerization
+  {
+    id: 'ethene_polymerization',
+    reactants: ['C2H4'],
+    products: ['PE'],
+    equation: 'nC₂H₄ → (C₂H₄)ₙ',
+    explanation: 'Ethene polymerizes to form polyethylene under high pressure.',
+    type: 'polymerization',
+    conditions: { temperature: 'high', pressure: 'very_high', catalyst: 'none' }
+  },
+  {
+    id: 'propene_polymerization',
+    reactants: ['C3H6'],
+    products: ['PP'],
+    equation: 'nC₃H₆ → (C₃H₆)ₙ',
+    explanation: 'Propene polymerizes to form polypropylene.',
+    type: 'polymerization',
+    conditions: { temperature: 'high', pressure: 'elevated', catalyst: 'nickel' }
+  },
+  {
+    id: 'styrene_polymerization',
+    reactants: ['C8H8'],
+    products: ['PS'],
+    equation: 'nC₈H₈ → (C₈H₈)ₙ',
+    explanation: 'Styrene polymerizes to form polystyrene.',
+    type: 'polymerization',
+    conditions: { temperature: 'medium', pressure: 'normal', catalyst: 'none' }
   }
 ];
 
