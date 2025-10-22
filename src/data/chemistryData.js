@@ -152,6 +152,57 @@ export const initialElements = [
   ,{ id: 'HCO3-', symbol: 'HCO₃⁻', name: 'Bicarbonate Ion', type: 'ion', group: 'ion', unlocked: true }
   ,{ id: 'HPO42-', symbol: 'HPO₄²⁻', name: 'Hydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: true }
   ,{ id: 'H2PO4-', symbol: 'H₂PO₄⁻', name: 'Dihydrogen Phosphate Ion', type: 'ion', group: 'ion', unlocked: true }
+  
+  // Additional metal ions
+  ,{ id: 'Pb2+', symbol: 'Pb²⁺', name: 'Lead(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Pb4+', symbol: 'Pb⁴⁺', name: 'Lead(IV) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Hg2+', symbol: 'Hg²⁺', name: 'Mercury(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Hg22+', symbol: 'Hg₂²⁺', name: 'Mercury(I) Ion (Dimercury)', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Sn2+', symbol: 'Sn²⁺', name: 'Tin(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Sn4+', symbol: 'Sn⁴⁺', name: 'Tin(IV) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ni2+', symbol: 'Ni²⁺', name: 'Nickel(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Co2+', symbol: 'Co²⁺', name: 'Cobalt(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Co3+', symbol: 'Co³⁺', name: 'Cobalt(III) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Mn2+', symbol: 'Mn²⁺', name: 'Manganese(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Mn3+', symbol: 'Mn³⁺', name: 'Manganese(III) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Mn4+', symbol: 'Mn⁴⁺', name: 'Manganese(IV) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Mn7+', symbol: 'Mn⁷⁺', name: 'Manganese(VII) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cr3+', symbol: 'Cr³⁺', name: 'Chromium(III) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cr6+', symbol: 'Cr⁶⁺', name: 'Chromium(VI) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ti2+', symbol: 'Ti²⁺', name: 'Titanium(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ti3+', symbol: 'Ti³⁺', name: 'Titanium(III) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ti4+', symbol: 'Ti⁴⁺', name: 'Titanium(IV) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'V2+', symbol: 'V²⁺', name: 'Vanadium(II) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'V3+', symbol: 'V³⁺', name: 'Vanadium(III) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'V4+', symbol: 'V⁴⁺', name: 'Vanadium(IV) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'V5+', symbol: 'V⁵⁺', name: 'Vanadium(V) Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Ba2+', symbol: 'Ba²⁺', name: 'Barium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Sr2+', symbol: 'Sr²⁺', name: 'Strontium Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'Cd2+', symbol: 'Cd²⁺', name: 'Cadmium Ion', type: 'ion', group: 'ion', unlocked: true }
+  
+  // Additional anions
+  ,{ id: 'F-', symbol: 'F⁻', name: 'Fluoride Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'S2-', symbol: 'S²⁻', name: 'Sulfide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'N3-', symbol: 'N³⁻', name: 'Nitride Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'P3-', symbol: 'P³⁻', name: 'Phosphide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'O2-', symbol: 'O²⁻', name: 'Oxide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'O22-', symbol: 'O₂²⁻', name: 'Peroxide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'CN-', symbol: 'CN⁻', name: 'Cyanide Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'SCN-', symbol: 'SCN⁻', name: 'Thiocyanate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'OCN-', symbol: 'OCN⁻', name: 'Cyanate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'ClO-', symbol: 'ClO⁻', name: 'Hypochlorite Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'ClO2-', symbol: 'ClO₂⁻', name: 'Chlorite Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'BrO3-', symbol: 'BrO₃⁻', name: 'Bromate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'IO3-', symbol: 'IO₃⁻', name: 'Iodate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'NO2-', symbol: 'NO₂⁻', name: 'Nitrite Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'SO32-', symbol: 'SO₃²⁻', name: 'Sulfite Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'C2O42-', symbol: 'C₂O₄²⁻', name: 'Oxalate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'CrO42-', symbol: 'CrO₄²⁻', name: 'Chromate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'CH3COO-', symbol: 'CH₃COO⁻', name: 'Acetate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'HCOO-', symbol: 'HCOO⁻', name: 'Formate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'SiO32-', symbol: 'SiO₃²⁻', name: 'Silicate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'BO33-', symbol: 'BO₃³⁻', name: 'Borate Ion', type: 'ion', group: 'ion', unlocked: true }
+  ,{ id: 'AsO43-', symbol: 'AsO₄³⁻', name: 'Arsenate Ion', type: 'ion', group: 'ion', unlocked: true }
 ];
 
 
@@ -499,6 +550,138 @@ export const compounds = [
   { id: 'Y2O3', symbol: 'Y₂O₃', name: 'Yttrium Oxide', type: 'compound', category: 'oxide', unlocked: false },
   { id: 'La2O3', symbol: 'La₂O₃', name: 'Lanthanum Oxide', type: 'compound', category: 'oxide', unlocked: false },
   { id: 'Nd2O3', symbol: 'Nd₂O₃', name: 'Neodymium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  
+  // Environmental & Atmospheric Compounds
+  { id: 'CFC-11', symbol: 'CFCl₃', name: 'Trichlorofluoromethane (CFC-11)', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'CFC-12', symbol: 'CF₂Cl₂', name: 'Dichlorodifluoromethane (CFC-12)', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'CHF3', symbol: 'CHF₃', name: 'Fluoroform (HFC-23)', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'C2F6', symbol: 'C₂F₆', name: 'Hexafluoroethane', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'NF3', symbol: 'NF₃', name: 'Nitrogen Trifluoride', type: 'compound', category: 'gas', unlocked: false },
+  
+  // More Organic Compounds
+  { id: 'C9H20', symbol: 'C₉H₂₀', name: 'Nonane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C10H22', symbol: 'C₁₀H₂₂', name: 'Decane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H12', symbol: 'C₆H₁₂', name: 'Cyclohexane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H10', symbol: 'C₅H₁₀', name: 'Cyclopentane', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C8H8', symbol: 'C₈H₈', name: 'Styrene', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C7H8O', symbol: 'C₇H₈O', name: 'Anisole', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H5COOCH3', symbol: 'C₆H₅COOCH₃', name: 'Methyl Benzoate', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C9H8O4', symbol: 'C₉H₈O₄', name: 'Aspirin (Acetylsalicylic Acid)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C13H18O2', symbol: 'C₁₃H₁₈O₂', name: 'Ibuprofen', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C8H10N4O2', symbol: 'C₈H₁₀N₄O₂', name: 'Caffeine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C17H21NO4', symbol: 'C₁₇H₂₁NO₄', name: 'Cocaine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C21H30O2', symbol: 'C₂₁H₃₀O₂', name: 'Cannabidiol (CBD)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H3N', symbol: 'C₂H₃N', name: 'Acetonitrile', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H3N', symbol: 'C₃H₃N', name: 'Acrylonitrile', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H4O', symbol: 'C₄H₄O', name: 'Furan', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H8O', symbol: 'C₄H₈O', name: 'Tetrahydrofuran (THF)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H10O', symbol: 'C₄H₁₀O', name: 'Diethyl Ether', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H5N', symbol: 'C₅H₅N', name: 'Pyridine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H7N', symbol: 'C₆H₇N', name: 'Methylpyridine', type: 'compound', category: 'organic', unlocked: false },
+  
+  // Food Chemistry Compounds
+  { id: 'C6H14O6', symbol: 'C₆H₁₄O₆', name: 'Sorbitol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C3H6O2', symbol: 'C₃H₆O₂', name: 'Pyruvic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C4H8O3', symbol: 'C₄H₈O₃', name: 'Acetoacetic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C2H3O2Na', symbol: 'C₂H₃O₂Na', name: 'Sodium Acetate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'C6H7NaO6', symbol: 'C₆H₇NaO₆', name: 'Sodium Ascorbate (Vitamin C Salt)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C6H8O6', symbol: 'C₆H₈O₆', name: 'Ascorbic Acid (Vitamin C)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C27H46O', symbol: 'C₂₇H₄₆O', name: 'Cholesterol', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C18H32O2', symbol: 'C₁₈H₃₂O₂', name: 'Oleic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C16H32O2', symbol: 'C₁₆H₃₂O₂', name: 'Palmitic Acid', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C18H36O2', symbol: 'C₁₈H₃₆O₂', name: 'Stearic Acid', type: 'compound', category: 'organic', unlocked: false },
+  
+  // Polymers & Plastics
+  { id: 'PVC', symbol: '(C₂H₃Cl)ₙ', name: 'Polyvinyl Chloride', type: 'compound', category: 'polymer', unlocked: false },
+  { id: 'PS', symbol: '(C₈H₈)ₙ', name: 'Polystyrene', type: 'compound', category: 'polymer', unlocked: false },
+  { id: 'PMMA', symbol: '(C₅H₈O₂)ₙ', name: 'Polymethyl Methacrylate (Acrylic)', type: 'compound', category: 'polymer', unlocked: false },
+  { id: 'PET', symbol: '(C₁₀H₈O₄)ₙ', name: 'Polyethylene Terephthalate', type: 'compound', category: 'polymer', unlocked: false },
+  { id: 'Nylon-6', symbol: '(C₆H₁₁NO)ₙ', name: 'Nylon-6', type: 'compound', category: 'polymer', unlocked: false },
+  { id: 'PTFE', symbol: '(C₂F₄)ₙ', name: 'Polytetrafluoroethylene (Teflon)', type: 'compound', category: 'polymer', unlocked: false },
+  
+  // More Metal Oxides
+  { id: 'BeO', symbol: 'BeO', name: 'Beryllium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'MgO', symbol: 'MgO', name: 'Magnesium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'CaO', symbol: 'CaO', name: 'Calcium Oxide (Quicklime)', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'SrO', symbol: 'SrO', name: 'Strontium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'BaO', symbol: 'BaO', name: 'Barium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Ga2O3', symbol: 'Ga₂O₃', name: 'Gallium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'In2O3', symbol: 'In₂O₃', name: 'Indium Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'GeO2', symbol: 'GeO₂', name: 'Germanium Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'As2O3', symbol: 'As₂O₃', name: 'Arsenic Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Sb2O3', symbol: 'Sb₂O₃', name: 'Antimony Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Bi2O3', symbol: 'Bi₂O₃', name: 'Bismuth Oxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'TeO2', symbol: 'TeO₂', name: 'Tellurium Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'SeO2', symbol: 'SeO₂', name: 'Selenium Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'WO3', symbol: 'WO₃', name: 'Tungsten Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'MoO3', symbol: 'MoO₃', name: 'Molybdenum Trioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Nb2O5', symbol: 'Nb₂O₅', name: 'Niobium Pentoxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'Ta2O5', symbol: 'Ta₂O₅', name: 'Tantalum Pentoxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'UO2', symbol: 'UO₂', name: 'Uranium Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  { id: 'ThO2', symbol: 'ThO₂', name: 'Thorium Dioxide', type: 'compound', category: 'oxide', unlocked: false },
+  
+  // More Nitrates
+  { id: 'LiNO3', symbol: 'LiNO₃', name: 'Lithium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Ba(NO3)2', symbol: 'Ba(NO₃)₂', name: 'Barium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Sr(NO3)2', symbol: 'Sr(NO₃)₂', name: 'Strontium Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Zn(NO3)2', symbol: 'Zn(NO₃)₂', name: 'Zinc Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Ni(NO3)2', symbol: 'Ni(NO₃)₂', name: 'Nickel(II) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Co(NO3)2', symbol: 'Co(NO₃)₂', name: 'Cobalt(II) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Mn(NO3)2', symbol: 'Mn(NO₃)₂', name: 'Manganese(II) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  { id: 'Hg(NO3)2', symbol: 'Hg(NO₃)₂', name: 'Mercury(II) Nitrate', type: 'compound', category: 'salt', unlocked: false },
+  
+  // Specialty Chemicals
+  { id: 'TiCl4', symbol: 'TiCl₄', name: 'Titanium Tetrachloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'ZrCl4', symbol: 'ZrCl₄', name: 'Zirconium Tetrachloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'VCl4', symbol: 'VCl₄', name: 'Vanadium Tetrachloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'CrCl2', symbol: 'CrCl₂', name: 'Chromium(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'MnCl2', symbol: 'MnCl₂', name: 'Manganese(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'CoCl2', symbol: 'CoCl₂', name: 'Cobalt(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'NiCl2', symbol: 'NiCl₂', name: 'Nickel(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'SnCl2', symbol: 'SnCl₂', name: 'Tin(II) Chloride', type: 'compound', category: 'ionic', unlocked: false },
+  { id: 'SnCl4', symbol: 'SnCl₄', name: 'Tin(IV) Chloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'SbCl3', symbol: 'SbCl₃', name: 'Antimony Trichloride', type: 'compound', category: 'compound', unlocked: false },
+  { id: 'BiCl3', symbol: 'BiCl₃', name: 'Bismuth Chloride', type: 'compound', category: 'compound', unlocked: false },
+  
+  // Gems and Minerals
+  { id: 'Al2O3_ruby', symbol: 'Al₂O₃:Cr', name: 'Ruby (Chromium-doped Aluminum Oxide)', type: 'compound', category: 'mineral', unlocked: false },
+  { id: 'Al2O3_sapphire', symbol: 'Al₂O₃:Ti', name: 'Sapphire (Titanium-doped Aluminum Oxide)', type: 'compound', category: 'mineral', unlocked: false },
+  { id: 'Be3Al2Si6O18', symbol: 'Be₃Al₂Si₆O₁₈', name: 'Emerald (Beryl)', type: 'compound', category: 'mineral', unlocked: false },
+  { id: 'ZrSiO4', symbol: 'ZrSiO₄', name: 'Zircon', type: 'compound', category: 'mineral', unlocked: false },
+  { id: 'Al2SiO5', symbol: 'Al₂SiO₅', name: 'Andalusite', type: 'compound', category: 'mineral', unlocked: false },
+  
+  // Explosives and Propellants
+  { id: 'C3H6N6O6', symbol: 'C₃H₆N₆O₆', name: 'RDX (Cyclotrimethylenetrinitramine)', type: 'compound', category: 'explosive', unlocked: false },
+  { id: 'C4H8N8O8', symbol: 'C₄H₈N₈O₈', name: 'HMX (Cyclotetramethylenetetranitramine)', type: 'compound', category: 'explosive', unlocked: false },
+  { id: 'C7H5N3O6', symbol: 'C₇H₅N₃O₆', name: 'Picric Acid', type: 'compound', category: 'explosive', unlocked: false },
+  { id: 'C6H2(NO2)3CH3', symbol: 'C₆H₂(NO₂)₃CH₃', name: '2,4,6-Trinitrotoluene (TNT)', type: 'compound', category: 'explosive', unlocked: false },
+  { id: 'C3H5N3O9', symbol: 'C₃H₅N₃O₉', name: 'Nitroglycerin', type: 'compound', category: 'explosive', unlocked: false },
+  { id: 'NC', symbol: '(C₆H₇O₂(NO₂)₃)ₙ', name: 'Nitrocellulose', type: 'compound', category: 'explosive', unlocked: false },
+  
+  // Dyes and Pigments
+  { id: 'Fe4[Fe(CN)6]3', symbol: 'Fe₄[Fe(CN)₆]₃', name: 'Prussian Blue', type: 'compound', category: 'pigment', unlocked: false },
+  { id: 'Pb3O4', symbol: 'Pb₃O₄', name: 'Red Lead (Minium)', type: 'compound', category: 'pigment', unlocked: false },
+  { id: 'CdS_yellow', symbol: 'CdS', name: 'Cadmium Yellow', type: 'compound', category: 'pigment', unlocked: false },
+  { id: 'CdSe', symbol: 'CdSe', name: 'Cadmium Selenide', type: 'compound', category: 'pigment', unlocked: false },
+  { id: 'Cr2O3_green', symbol: 'Cr₂O₃', name: 'Chrome Green', type: 'compound', category: 'pigment', unlocked: false },
+  { id: 'CoAl2O4', symbol: 'CoAl₂O₄', name: 'Cobalt Blue', type: 'compound', category: 'pigment', unlocked: false },
+  { id: 'C16H10N2O2', symbol: 'C₁₆H₁₀N₂O₂', name: 'Indigo', type: 'compound', category: 'pigment', unlocked: false },
+  
+  // Refrigerants (Additional)
+  { id: 'R-22', symbol: 'CHClF₂', name: 'Chlorodifluoromethane (R-22)', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'R-410A', symbol: 'CH₂F₂/C₂HF₅', name: 'R-410A (Refrigerant Mix)', type: 'compound', category: 'gas', unlocked: false },
+  { id: 'NH3_refrigerant', symbol: 'NH₃', name: 'Ammonia (Refrigerant)', type: 'compound', category: 'gas', unlocked: false },
+  
+  // Biochemical & Pharmaceutical
+  { id: 'C4H5N3O', symbol: 'C₄H₅N₃O', name: 'Cytosine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H5N5', symbol: 'C₅H₅N₅', name: 'Adenine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H5N5O', symbol: 'C₅H₅N₅O', name: 'Guanine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H6N2O2', symbol: 'C₅H₆N₂O₂', name: 'Thymine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C5H6N2O2_uracil', symbol: 'C₄H₄N₂O₂', name: 'Uracil', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C9H13NO3', symbol: 'C₉H₁₃NO₃', name: 'Adrenaline (Epinephrine)', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C10H12N2O', symbol: 'C₁₀H₁₂N₂O', name: 'Serotonin', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C8H11NO2', symbol: 'C₈H₁₁NO₂', name: 'Dopamine', type: 'compound', category: 'organic', unlocked: false },
+  { id: 'C43H58N4O12', symbol: 'C₄₃H₅₈N₄O₁₂', name: 'Chlorophyll-a', type: 'compound', category: 'organic', unlocked: false },
 ];
 
 
