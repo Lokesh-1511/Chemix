@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../styles/ReactionZone.css';
 
 const ReactionZone = ({ onReaction, selectedElements, setSelectedElements }) => {
@@ -45,16 +45,18 @@ const ReactionZone = ({ onReaction, selectedElements, setSelectedElements }) => 
     }
   };
 
+  // Ref for drop area to attach touch listener reliably
+  const dropAreaRef = useRef(null);
+
   // Add touch drop event listener
-  React.useEffect(() => {
-    const dropArea = document.querySelector('.drop-area');
-    if (dropArea) {
-      dropArea.addEventListener('touchdrop', handleTouchDrop);
-      return () => {
-        dropArea.removeEventListener('touchdrop', handleTouchDrop);
-      };
-    }
-  }, [selectedElements]);
+  useEffect(() => {
+    const node = dropAreaRef.current;
+    if (!node) return;
+    node.addEventListener('touchdrop', handleTouchDrop);
+    return () => {
+      node.removeEventListener('touchdrop', handleTouchDrop);
+    };
+  }, [dropAreaRef, selectedElements]);
 
   const removeElement = (elementId) => {
     setSelectedElements(prev => prev.filter(el => el.id !== elementId));
@@ -76,6 +78,7 @@ const ReactionZone = ({ onReaction, selectedElements, setSelectedElements }) => 
       
       <div 
         className={`drop-area ${dragOver ? 'drag-over' : ''} ${selectedElements.length > 0 ? 'has-elements' : ''}`}
+        ref={dropAreaRef}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
