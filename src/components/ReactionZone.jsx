@@ -31,6 +31,31 @@ const ReactionZone = ({ onReaction, selectedElements, setSelectedElements }) => 
     }
   };
 
+  // Touch drop handler
+  const handleTouchDrop = (e) => {
+    const element = e.detail.element;
+    
+    // Prevent duplicate elements in the reaction zone
+    if (!selectedElements.find(el => el.id === element.id)) {
+      setSelectedElements(prev => [...prev, element]);
+      
+      // Visual feedback
+      setDragOver(true);
+      setTimeout(() => setDragOver(false), 300);
+    }
+  };
+
+  // Add touch drop event listener
+  React.useEffect(() => {
+    const dropArea = document.querySelector('.drop-area');
+    if (dropArea) {
+      dropArea.addEventListener('touchdrop', handleTouchDrop);
+      return () => {
+        dropArea.removeEventListener('touchdrop', handleTouchDrop);
+      };
+    }
+  }, [selectedElements]);
+
   const removeElement = (elementId) => {
     setSelectedElements(prev => prev.filter(el => el.id !== elementId));
   };

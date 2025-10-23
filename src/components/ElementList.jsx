@@ -32,6 +32,74 @@ const ElementList = ({ elements, onDragStart }) => {
     }
   };
 
+  // Touch support for mobile drag-and-drop
+  const handleTouchStart = (e, element) => {
+    const touch = e.touches[0];
+    const card = e.currentTarget;
+    
+    // Store element data for touch drag
+    card.dataset.elementData = JSON.stringify(element);
+    
+    // Create a visual clone for dragging
+    const clone = card.cloneNode(true);
+    clone.style.position = 'fixed';
+    clone.style.pointerEvents = 'none';
+    clone.style.opacity = '0.8';
+    clone.style.zIndex = '10000';
+    clone.style.transform = 'scale(1.1)';
+    clone.style.transition = 'none';
+    clone.id = 'drag-clone';
+    
+    // Position the clone at touch point
+    clone.style.left = `${touch.clientX - 40}px`;
+    clone.style.top = `${touch.clientY - 40}px`;
+    
+    document.body.appendChild(clone);
+    
+    // Add visual feedback to original card
+    card.style.opacity = '0.5';
+  };
+
+  const handleTouchMove = (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const clone = document.getElementById('drag-clone');
+    
+    if (clone) {
+      clone.style.left = `${touch.clientX - 40}px`;
+      clone.style.top = `${touch.clientY - 40}px`;
+    }
+  };
+
+  const handleTouchEnd = (e, element) => {
+    const card = e.currentTarget;
+    const clone = document.getElementById('drag-clone');
+    const touch = e.changedTouches[0];
+    
+    // Remove clone
+    if (clone) {
+      clone.remove();
+    }
+    
+    // Restore original card opacity
+    card.style.opacity = '1';
+    
+    // Find the element at touch point
+    const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+    
+    // Check if dropped on reaction zone
+    if (dropTarget) {
+      const dropArea = dropTarget.closest('.drop-area');
+      if (dropArea) {
+        // Trigger custom event for drop
+        const dropEvent = new CustomEvent('touchdrop', {
+          detail: { element: element }
+        });
+        dropArea.dispatchEvent(dropEvent);
+      }
+    }
+  };
+
   // Count elements by type
   const counts = {
     all: unlockedElements.length,
@@ -90,6 +158,9 @@ const ElementList = ({ elements, onDragStart }) => {
             className={`element-card ${element.type}`}
             draggable
             onDragStart={(e) => handleDragStart(e, element)}
+            onTouchStart={(e) => handleTouchStart(e, element)}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={(e) => handleTouchEnd(e, element)}
             title={element.name}
           >
             <div className="element-symbol">{element.symbol}</div>

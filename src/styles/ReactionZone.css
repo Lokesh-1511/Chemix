@@ -296,10 +296,36 @@
     touch-action: none;
     user-select: none;
     -webkit-user-select: none;
+    border-width: 3px;
+  }
+  
+  .drop-area::before {
+    content: '👆 Drag elements here';
+    position: absolute;
+    top: var(--spacing-sm);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(14, 165, 233, 0.9);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 0.75rem;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .drop-area:not(.has-elements)::before {
+    opacity: 1;
   }
   
   .selected-elements .element-card {
     touch-action: manipulation;
+  }
+  
+  .element-list .element-card {
+    cursor: pointer;
   }
 }
 
