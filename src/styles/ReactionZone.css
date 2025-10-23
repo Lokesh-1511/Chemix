@@ -240,10 +240,15 @@
 @media (max-width: 480px) {
   .drop-area {
     padding: var(--spacing-md);
+    min-height: 160px;
   }
   
   .drop-icon {
     font-size: 2rem;
+  }
+  
+  .drop-placeholder p {
+    font-size: 1rem;
   }
   
   .selected-elements {
@@ -253,6 +258,48 @@
   
   .reaction-arrow {
     transform: rotate(90deg);
+  }
+  
+  .react-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .drop-area {
+    padding: var(--spacing-sm);
+    min-height: 140px;
+  }
+  
+  .drop-icon {
+    font-size: 1.75rem;
+  }
+  
+  .drop-placeholder p {
+    font-size: 0.9375rem;
+  }
+  
+  .drop-placeholder small {
+    font-size: 0.75rem;
+  }
+  
+  .react-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+  .drop-area {
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .selected-elements .element-card {
+    touch-action: manipulation;
   }
 }
 

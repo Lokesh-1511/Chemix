@@ -227,4 +227,28 @@
     grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     gap: var(--spacing-xs);
   }
+  
+  .search-input {
+    font-size: 0.875rem;
+  }
+  
+  .filter-btn {
+    font-size: 0.8125rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 360px) {
+  .element-grid {
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+  }
+  
+  .filter-buttons {
+    gap: var(--spacing-xs);
+  }
+  
+  .filter-btn {
+    font-size: 0.75rem;
+    padding: 6px var(--spacing-xs);
+  }
 }

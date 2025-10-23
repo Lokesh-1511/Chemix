@@ -413,6 +413,57 @@
   }
 }
 
+@media (max-width: 480px) {
+  :root {
+    --cell-size: 35px;
+    --fblock-cell-size: 30px;
+  }
+  
+  .page-header h1 {
+    font-size: 1.25rem;
+  }
+  
+  .periodic-table-card {
+    padding: 0.75rem;
+    overflow-x: auto;
+  }
+  
+  .element-button {
+    min-width: var(--cell-size);
+  }
+  
+  .element-number {
+    font-size: 0.55rem;
+  }
+  
+  .element-symbol {
+    font-size: 0.9rem;
+  }
+  
+  .element-name {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --cell-size: 32px;
+    --fblock-cell-size: 28px;
+  }
+  
+  .page-header h1 {
+    font-size: 1.125rem;
+  }
+  
+  .page-header p {
+    font-size: 0.875rem;
+  }
+  
+  .periodic-table-card {
+    padding: 0.5rem;
+  }
+}
+
 /* Dark Theme Overrides */
 [data-theme="dark"] .periodic-table-page {
   background: linear-gradient(135deg, #1e293b 0%, #1f2937 50%, #2d1b4e 100%);

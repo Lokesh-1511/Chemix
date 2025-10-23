@@ -381,6 +381,14 @@
 }
 
 @media (max-width: 480px) {
+  .conditions-panel {
+    padding: var(--spacing-md);
+  }
+  
+  .panel-title {
+    font-size: 1.125rem;
+  }
+  
   .condition-label {
     flex-direction: column;
     align-items: flex-start;
@@ -393,6 +401,33 @@
   
   .summary-tag {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .conditions-panel {
+    padding: var(--spacing-sm);
+  }
+  
+  .panel-title {
+    font-size: 1rem;
+  }
+  
+  .condition-label span {
+    font-size: 0.8125rem;
+  }
+  
+  .conditions-help {
+    font-size: 0.8125rem;
+  }
+  
+  .conditions-help li {
+    font-size: 0.75rem;
+  }
+  
+  .summary-tag {
+    font-size: 0.65rem;
+    padding: 2px 6px;
   }
 }
 

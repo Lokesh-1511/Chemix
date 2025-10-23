@@ -137,16 +137,43 @@
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    height: 56px;
+  }
+  
   .navbar-content {
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
+  }
+  
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+  
+  .brand-icon {
+    font-size: 1.3rem;
   }
   
   .navbar-menu {
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
   }
   
   .navbar-link {
-    padding: var(--spacing-xs);
-    font-size: 0.85rem;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .navbar-actions {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  
+  .navbar-link {
+    padding: 4px 6px;
+    font-size: 0.75rem;
   }
 }

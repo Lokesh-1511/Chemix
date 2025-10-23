@@ -126,3 +126,39 @@
     font-size: 0.65rem;
   }
 }
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 60px;
+  }
+  
+  .element-card {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .element-symbol {
+    font-size: 0.9rem;
+  }
+  
+  .element-name {
+    font-size: 0.6rem;
+  }
+  
+  .element-type {
+    font-size: 0.5rem;
+    padding: 1px 3px;
+  }
+}
+
+/* Mobile touch improvements */
+@media (hover: none) and (pointer: coarse) {
+  .element-card {
+    cursor: pointer;
+  }
+  
+  .element-card:active {
+    cursor: pointer;
+    transform: scale(0.95);
+  }
+}

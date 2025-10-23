@@ -157,9 +157,38 @@
 @media (max-width: 480px) {
   .learn-content {
     padding: 0 var(--spacing-sm);
+    gap: var(--spacing-md);
   }
   
   .learn-stats {
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    flex-direction: column;
+  }
+  
+  .stat-card {
+    min-width: 100%;
+    padding: var(--spacing-md);
+  }
+  
+  .page-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .stat-card {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .stat-number {
+    font-size: 1.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
   }
 }

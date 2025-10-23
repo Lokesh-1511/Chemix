@@ -378,10 +378,19 @@
 }
 
 @media (max-width: 480px) {
+  .result-card {
+    padding: var(--spacing-lg);
+    max-width: calc(100vw - 2rem);
+  }
+  
   .result-header {
     flex-direction: column;
     gap: var(--spacing-sm);
     text-align: center;
+  }
+  
+  .result-title {
+    font-size: 1.5rem;
   }
   
   .close-button {
@@ -400,6 +409,45 @@
   .molecules-animation {
     flex-wrap: wrap;
     gap: var(--spacing-xs);
+  }
+  
+  .info-label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .result-card {
+    padding: var(--spacing-md);
+    max-width: calc(100vw - 1rem);
+  }
+  
+  .result-title {
+    font-size: 1.25rem;
+  }
+  
+  .result-type {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+  
+  .close-button {
+    width: 32px;
+    height: 32px;
+    font-size: 1.25rem;
+  }
+  
+  .condition-tag {
+    font-size: 0.6875rem;
+    padding: 3px 8px;
+  }
+  
+  .info-label {
+    font-size: 0.8125rem;
+  }
+  
+  .info-value {
+    font-size: 0.9375rem;
   }
 }
 
